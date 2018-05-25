@@ -57,24 +57,6 @@ return array (
       '@keltstr/simplehtmldom' => $vendorDir . '/keltstr/yii2-simplehtmldom',
     ),
   ),
-  'miloschuman/yii2-highcharts-widget' => 
-  array (
-    'name' => 'miloschuman/yii2-highcharts-widget',
-    'version' => '6.0.0.0',
-    'alias' => 
-    array (
-      '@miloschuman/highcharts' => $vendorDir . '/miloschuman/yii2-highcharts-widget/src',
-    ),
-  ),
-  'yii2mod/yii2-c3-chart' => 
-  array (
-    'name' => 'yii2mod/yii2-c3-chart',
-    'version' => '1.0.2.0',
-    'alias' => 
-    array (
-      '@yii2mod/c3/chart' => $vendorDir . '/yii2mod/yii2-c3-chart',
-    ),
-  ),
   '2amigos/yii2-chartjs-widget' => 
   array (
     'name' => '2amigos/yii2-chartjs-widget',
