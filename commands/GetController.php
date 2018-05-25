@@ -15,6 +15,8 @@ use app\models\NossfUimTopTen;
 use app\models\NossfUimAsm;
 use app\models\NossfUimTablespace;
 use app\models\NossfUimSessionServer;
+use app\models\NossaSessionAppl;
+use app\models\NossaSessionDb;
 
 /**
  * @author Faisal Khalid <faisal.khalid@telkom.coid>
@@ -347,6 +349,150 @@ class GetController extends Controller {
             }
             $init++;
         }
+        return ExitCode::OK;
+    }
+
+    public function actionNossadb() {
+        $html_source = SHD::file_get_html('http://cmon.telkom.co.id/cacti/nossa/ceksess.log');
+        $data = $html_source->plaintext;
+        $words = preg_split("/[^\w]*([\s]+[^\w]*|$)/", $data, -1, PREG_SPLIT_NO_EMPTY);
+        $limit = 2000;
+        $init = 16;
+
+        // nossa session appl
+        $step = $init;
+        $fee = 0;
+        $ketemu = FALSE;
+        while (($ketemu == FALSE) && ($init != $limit)) {
+            if ($words[$init] == "STATUS") {
+                $ketemu = TRUE;
+            } else {
+                if ($fee == 0) {
+                    $fee = 5;
+                    $wkt = $words[$step] . " " . $words[$step + 1];
+                    $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
+
+                    $modelNossaSessionAppl = new NossaSessionAppl();
+                    $modelNossaSessionAppl->server_name = $words[$step + 2];
+                    $modelNossaSessionAppl->session_total = $words[$step + 3];
+                    $modelNossaSessionAppl->status = $words[$step + 4];
+                    $modelNossaSessionAppl->waktu = $waktuNya;
+                    $modelNossaSessionAppl->save();
+
+                    $step = $step + 5;
+                } else {
+                    $fee--;
+                }
+            }
+            $init++;
+        }
+
+        $fee = 0;
+        $sum = 0;
+        $ketemu = FALSE;
+        while (($ketemu == FALSE) && ($init != $limit)) {
+            if ($sum == 49) {
+                $ketemu = TRUE;
+            } else {
+                if ($fee == 0) {
+                    $fee = 5;
+                    $wkt = $words[$step] . " " . $words[$step + 1];
+                    $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
+
+                    $modelNossaSessionAppl = new NossaSessionAppl();
+                    $modelNossaSessionAppl->server_name = $words[$step + 2];
+                    $modelNossaSessionAppl->session_total = $words[$step + 3];
+                    $modelNossaSessionAppl->status = $words[$step + 4];
+                    $modelNossaSessionAppl->waktu = $waktuNya;
+                    $modelNossaSessionAppl->save();
+
+                    $step = $step + 5;
+                } else {
+                    $fee--;
+                }
+            }
+            $init++;
+            $sum++;
+        }
+
+
+        // nossa session db 
+        $step = $init - 50;
+        $fee = 0;
+        $ketemu = FALSE;
+        while (($ketemu == FALSE) && ($init != $limit)) {
+            if ($words[$init] == "selected") {
+                $ketemu = TRUE;
+            } else {
+                if ($fee == 0) {
+                    $fee = 6;
+                    $wkt = $words[$step] . " " . $words[$step + 1];
+                    $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
+//                    echo $waktuNya . "|" . $words[$step + 2] . "|" . $words[$step + 3] . "|" . $words[$step + 4] . "|" . $words[$step + 5] . "]" ;
+//                    echo $waktuNya . "|" . $words[$step + 2] . "|" . $words[$step + 3] . "|" . $words[$step + 4] . "|" . $words[$step + 5] . "|" ;
+                    
+                    $modelNossaSessionDB = new NossaSessionDb();
+                    $modelNossaSessionDB->machine_name = $words[$step + 3];
+                    $modelNossaSessionDB->inst_id = $words[$step + 2];
+                    $modelNossaSessionDB->session_total= $words[$step + 4];
+                    $modelNossaSessionDB->status = $words[$step + 5];
+                    $modelNossaSessionDB->waktu = $waktuNya;
+                    
+                    $modelNossaSessionDB->save();
+
+//                    $modelNossaSessionAppl = new NossaSessionAppl();
+//                    $modelNossaSessionAppl->server_name = $words[$step + 2];
+//                    $modelNossaSessionAppl->session_total = $words[$step + 3];
+//                    $modelNossaSessionAppl->status = $words[$step + 4];
+//                    $modelNossaSessionAppl->waktu = $waktuNya;
+//                    $modelNossaSessionAppl->save();
+
+                    $step = $step + 6;
+                } else {
+                    $fee--;
+                }
+            }
+            $init++;
+        }
+
+//        $fee = 0;
+//        $sum = 0;
+//        $ketemu = FALSE;
+//        while (($ketemu == FALSE) && ($init != $limit)) {
+//            if ($sum == 110) {
+//                $ketemu = TRUE;
+//            } else {
+//                if ($fee == 0) {
+//                    $fee = 5;
+//                    $wkt = $words[$step] . " " . $words[$step + 1];
+//                    $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
+//                    echo $waktuNya . "|" . $words[$step + 2] . "|" . $words[$step + 3] . "|" . $words[$step + 4] . "|" . $words[$step + 5] .  "]";
+//                    $modelNossaSessionDB = new NossaSessionDb();
+//                    $modelNossaSessionDB->machine_name = $words[$step + 2];
+//                    $modelNossaSessionDB->inst_id = $words[$step + 3];
+//                    $modelNossaSessionDB->session_total= $words[$step + 4];
+//                    $modelNossaSessionDB->status = $words[$step + 5];
+//                    $modelNossaSessionDB->waktu = $waktuNya;
+////                    $modelNossaSessionDB->save();
+//
+////                    $modelNossaSessionAppl = new NossaSessionAppl();
+////                    $modelNossaSessionAppl->server_name = $words[$step + 2];
+////                    $modelNossaSessionAppl->session_total = $words[$step + 3];
+////                    $modelNossaSessionAppl->status = $words[$step + 4];
+////                    $modelNossaSessionAppl->waktu = $waktuNya;
+////                    $modelNossaSessionAppl->save();
+//
+//                    $step = $step + 5;
+//                } else {
+//                    $fee--;
+//                }
+//            }
+//            $init++;
+//            $sum++;
+//        }
+
+        // nossa session DB
+        return ExitCode::OK;
     }
 
 }

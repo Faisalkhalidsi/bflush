@@ -5,6 +5,7 @@ use dosamigos\chartjs\ChartJs;
 use kartik\daterange\DateRangePicker;
 //use yii\bootstrap\Button;
 use yii\bootstrap\Html;
+
 //use yii\bootstrap\ActiveForm;
 
 $this->registerJsFile("@web/js/osmQueue.js", [
@@ -68,7 +69,7 @@ HTML;
     </div>
     <div class="col-sm-3">
         <?php
-        echo Html::submitButton('show', ['class' => 'btn btn-primary','id'=>'showBtn']);
+        echo Html::submitButton('show', ['class' => 'btn btn-primary', 'id' => 'showBtn']);
 //        ActiveForm::end();
         ?>
     </div>
@@ -76,28 +77,31 @@ HTML;
 <hr>
 
 
-
-<?=
-ChartJs::widget([
-    'type' => 'line',
-    'options' => [
-        'height' => 3,
-        'width' => 10
-    ],
-    'data' => [
-        'labels' => $data,
-        'datasets' => [
-            [
-                'label' => "Queue Total",
-                'backgroundColor' => "rgba(0,0,255,0)",
-                'borderColor' => "rgba(0,0,255,0.5)",
-                'pointBackgroundColor' => "rgba(255,99,132,1)",
-                'pointBorderColor' => "#fff",
-                'pointHoverBackgroundColor' => "#fff",
-                'pointHoverBorderColor' => "rgba(255,99,132,1)",
-                'data' => $dataOwn
+<div id="chart" class="center-block">
+    <?=
+    ChartJs::widget([
+        'id' => 'osmQueueCrx',
+        'type' => 'line',
+        'options' => [
+            'height' => 3,
+            'width' => 10,
+            'legend' => ['position' => 'bottom']
+        ],
+        'data' => [
+            'labels' => $data,
+            'datasets' => [
+                [
+                    'label' => "Queue Total",
+                    'backgroundColor' => "rgba(0,0,255,0)",
+                    'borderColor' => "rgba(0,0,255,0.5)",
+                    'pointBackgroundColor' => "rgba(255,99,132,1)",
+                    'pointBorderColor' => "#fff",
+                    'pointHoverBackgroundColor' => "#fff",
+                    'pointHoverBorderColor' => "rgba(255,99,132,1)",
+                    'data' => $dataOwn
+                ]
             ]
         ]
-    ]
-]);
-?>
+    ]);
+    ?>
+</div>
