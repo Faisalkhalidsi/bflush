@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c4/Telkom_Indonesia_2013.svg/250px-Telkom_Indonesia_2013.svg.png" height="100px">
     </a>
     <h1 align="center">CMON Monitoring Project</h1>
     <br>
