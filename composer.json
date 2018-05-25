@@ -22,8 +22,7 @@
         "yii2mod/yii2-c3-chart": "*",
         "miloschuman/yii2-highcharts-widget": "^6.0",
         "2amigos/yii2-chartjs-widget": "~2.0",
-        "kartik-v/yii2-date-range": "*",
-        "idk/yii2-google-apiclient": "^1.1"
+        "kartik-v/yii2-date-range": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

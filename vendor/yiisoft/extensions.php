@@ -102,13 +102,4 @@ return array (
       '@kartik/daterange' => $vendorDir . '/kartik-v/yii2-date-range',
     ),
   ),
-  'idk/yii2-google-apiclient' => 
-  array (
-    'name' => 'idk/yii2-google-apiclient',
-    'version' => '1.1.0.0',
-    'alias' => 
-    array (
-      '@idk/yii2/google/apiclient' => $vendorDir . '/idk/yii2-google-apiclient',
-    ),
-  ),
 );
