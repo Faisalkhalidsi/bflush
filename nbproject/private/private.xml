@@ -5,7 +5,6 @@
         <group>
             <file>file:/var/www/html/bflush/controllers/NossaController.php</file>
             <file>file:/var/www/html/bflush/views/nossa/index.php</file>
-            <file>file:/var/www/html/bflush/controllers/NossaController_old.php</file>
         </group>
     </open-files>
 </project-private>
