@@ -13,8 +13,10 @@ $this->registerJsFile("@web/js/osmQueue.js", [
         \yii\web\JqueryAsset::className()
     ]
 ]);
+$this->title = 'Queue OSM Order';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<h1>Queue OSM Order</h1>
+<h3>Queue OSM Order</h3>
 <!--<p>*Last 2 Hours</p>-->
 <hr>
 
@@ -76,7 +78,10 @@ HTML;
 </div>
 <hr>
 
-
+<div class="row">
+    <div class="col-sm-8"></div>
+    <div class="col-sm-2"></div>
+</div>
 <div id="chart" class="center-block">
     <?=
     ChartJs::widget([
@@ -85,7 +90,24 @@ HTML;
         'options' => [
             'height' => 3,
             'width' => 10,
-            'legend' => ['position' => 'bottom']
+        ],
+        'clientOptions' => [
+            'legend' => [
+                'display' => true,
+                'position' => 'left',
+                'labels' => [
+//                    'fontSize' => 14,
+                    'fontColor' => "#425062",
+                ]
+            ],
+            'tooltips' => [
+                'enabled' => true,
+                'intersect' => true
+            ],
+            'hover' => [
+                'mode' => true
+            ],
+//            'maintainAspectRatio' => false,
         ],
         'data' => [
             'labels' => $data,

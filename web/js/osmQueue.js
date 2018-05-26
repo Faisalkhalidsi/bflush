@@ -46,10 +46,10 @@ $('#showBtn').on('click', function (e) {
                     options: {
 //                    height: 3,
 //                    width: 10
-//                    legend: {
-//                        display: true,
-//                        position: 'bottom'
-//                    }
+                        legend: {
+                            display: true,
+                            position: 'left'
+                        }
                     }
 
 

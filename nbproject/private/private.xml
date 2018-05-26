@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/bflush/controllers/NossfOsmController.php</file>
-            <file>file:/var/www/html/bflush/web/index.php</file>
+            <file>file:/var/www/html/bflush/controllers/NossaController.php</file>
+            <file>file:/var/www/html/bflush/views/nossa/index.php</file>
+            <file>file:/var/www/html/bflush/controllers/NossaController_old.php</file>
         </group>
     </open-files>
 </project-private>

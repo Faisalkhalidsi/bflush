@@ -41,7 +41,13 @@ AppAsset::register($this);
 //                    ['label' => 'Home', 'url' => ['/site/index']],
 //                    ['label' => 'About', 'url' => ['/site/about']],
 //                    ['label' => 'Contact', 'url' => ['/site/contact']],
-                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],
+                    ['label' => 'NOSSA', 'url' => ['/nossa/index']],
+//                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],
+                    ['label' => 'NOSSF-OSM', 'items' => [
+                            ['label' => 'Queue List', 'url' => '#'],
+                            ['label' => 'Queue Graph', 'url' => ['/nossf-osm/index']],
+                        ],
+                    ],
 //                    Yii::$app->user->isGuest ? (
 //                            ['label' => 'Login', 'url' => ['/site/login']]
 //                            ) : (

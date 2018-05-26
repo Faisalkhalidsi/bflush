@@ -11448,3 +11448,1290 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1527230632.251
     'REQUEST_TIME' => 1527230632
 ]
+2018-05-25 08:53:47 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][Error] Error: Class 'app\controllers\Expression' not found in /var/www/html/bflush/controllers/NossaController.php:39
+Stack trace:
+#0 [internal function]: app\controllers\NossaController->actionIndex()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#7 {main}
+2018-05-25 08:53:47 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '41004'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527238427.858
+    'REQUEST_TIME' => 1527238427
+]
+2018-05-25 16:12:09 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][Error] Error: Class 'DateRangePicker' not found in /var/www/html/bflush/views/nossa/index.php:30
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#4 /var/www/html/bflush/controllers/NossaController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\NossaController->actionIndex()
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#12 {main}
+2018-05-25 16:12:09 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossf-osm%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '41862'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527239529.324
+    'REQUEST_TIME' => 1527239529
+]
+2018-05-25 09:33:04 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][Error] Error: Class 'app\controllers\ActiveDataProvider' not found in /var/www/html/bflush/controllers/NossaController.php:40
+Stack trace:
+#0 [internal function]: app\controllers\NossaController->actionIndex()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#7 {main}
+2018-05-25 09:33:04 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+    'page' => '34'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '42464'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex&page=34'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex&page=34'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527240784.456
+    'REQUEST_TIME' => 1527240784
+]
+2018-05-25 09:33:18 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: searchModel in /var/www/html/bflush/controllers/NossaController.php:49
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(49): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 49, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 09:33:18 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+    'page' => '34'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '42470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex&page=34'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex&page=34'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527240798.691
+    'REQUEST_TIME' => 1527240798
+]
+2018-05-25 09:37:04 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:49
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(49): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 49, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 09:37:04 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '42746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527241024.181
+    'REQUEST_TIME' => 1527241024
+]
+2018-05-25 09:44:09 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Only Pagination instance, configuration array or false is allowed. in /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php:223
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php(180): yii\data\BaseDataProvider->setPagination(10)
+#1 /var/www/html/bflush/controllers/NossaController.php(47): yii\base\Component->__set('pagination', 10)
+#2 [internal function]: app\controllers\NossaController->actionIndex()
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#9 {main}
+2018-05-25 09:44:09 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527241449.407
+    'REQUEST_TIME' => 1527241449
+]
+2018-05-25 09:44:24 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Only Pagination instance, configuration array or false is allowed. in /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php:223
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php(180): yii\data\BaseDataProvider->setPagination(10)
+#1 /var/www/html/bflush/controllers/NossaController.php(40): yii\base\Component->__set('pagination', 10)
+#2 [internal function]: app\controllers\NossaController->actionIndex()
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#9 {main}
+2018-05-25 09:44:24 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527241464.924
+    'REQUEST_TIME' => 1527241464
+]
+2018-05-25 10:10:05 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][Error] Error: Class 'ActiveForm' not found in /var/www/html/bflush/views/nossa/index.php:25
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#4 /var/www/html/bflush/controllers/NossaController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\NossaController->actionIndex()
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#12 {main}
+2018-05-25 10:10:05 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243005.854
+    'REQUEST_TIME' => 1527243005
+]
+2018-05-25 17:10:19 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Expecting end() of yii\widgets\ActiveForm, found yii\widgets\Pjax in /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php:117
+Stack trace:
+#0 /var/www/html/bflush/views/nossa/index.php(77): yii\base\Widget::end()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#5 /var/www/html/bflush/controllers/NossaController.php(44): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\NossaController->actionIndex()
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#13 {main}
+2018-05-25 17:10:19 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43614'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243019.832
+    'REQUEST_TIME' => 1527243019
+]
+2018-05-25 10:12:50 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:50
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(50): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 50, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 10:12:50 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243170.38
+    'REQUEST_TIME' => 1527243170
+]
+2018-05-25 10:13:06 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:47
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(47): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 47, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 10:13:06 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243186.645
+    'REQUEST_TIME' => 1527243186
+]
+2018-05-25 10:13:07 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:47
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(47): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 47, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 10:13:07 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243187.177
+    'REQUEST_TIME' => 1527243187
+]
+2018-05-25 10:14:01 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:48
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(48): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 48, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 10:14:01 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => '-yLMZlGp5DG46N3E7_8VZi4isTrcvuytPSWGxoEaF3eqV5UIG_uABP7Q8J2_rEU5ZxvEZZrxuJhJVLW2slt7Hg=='
+    'date_range' => '2018-05-25 17:14'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243241.984
+    'REQUEST_TIME' => 1527243241
+]
+2018-05-25 10:16:12 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:54
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 54, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-25 10:16:12 [127.0.0.1][-][37ef8s4ng4e7esdn8nh4t44rq8][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => 'VdQ0UivlGYPBvAWWcnYwmz3l1WJ2OHVd2P2CPxUSkd0EoW08Ybd9toeEKM8iJWDEdNygPTB3IWisjLFPJlP9tA=='
+    'date_range' => '2018-05-25 17:16'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37ef8s4ng4e7esdn8nh4t44rq8'
+    '_csrf' => 'd4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=37ef8s4ng4e7esdn8nh4t44rq8; _csrf=d4dc3750ea14c0e42183b354fed6589eb6e008de3d9c70b732da1ffb9dacd8bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QuYnJRd5F8-YPSP_I9u_FOT5tq3p3Ali%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527243372.665
+    'REQUEST_TIME' => 1527243372
+]
+2018-05-26 06:42:01 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:56
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(56): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 56, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-26 06:42:01 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => 'UybHfp9yTW82YI6esSEtSW9PxWEt-YzPuGGaEeHH2e4FZfYy8iR9NxsY5Nv-RkEEISGnUFjO9rnwI_R_zLeIvg=='
+    'date_range' => '2018-05-26 13:42'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3hdgdv20690s2o1j50u9dhn5d3'
+    '_csrf' => '9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=3hdgdv20690s2o1j50u9dhn5d3; _csrf=9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '48700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527316921.943
+    'REQUEST_TIME' => 1527316921
+]
+2018-05-26 06:42:25 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/controllers/NossaController.php:56
+Stack trace:
+#0 /var/www/html/bflush/controllers/NossaController.php(56): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 56, Array)
+#1 [internal function]: app\controllers\NossaController->actionIndex()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#8 {main}
+2018-05-26 06:42:25 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => 'XgZnueJgFFNn8ei3-l1jC4NLd3-atiJbIsC3s5tMR1AIRVb1jzYkC0qJgvK1Og9GzSUVTu-BWC1qgtndtjwWAA=='
+    'date_range' => '2018-05-26 13:42'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3hdgdv20690s2o1j50u9dhn5d3'
+    '_csrf' => '9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=3hdgdv20690s2o1j50u9dhn5d3; _csrf=9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '48722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527316945.515
+    'REQUEST_TIME' => 1527316945
+]
+2018-05-26 13:45:49 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][error][Error] Error: Call to a member function getCount() on string in /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php:190
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#3 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#7 /var/www/html/bflush/views/nossa/index.php(66): yii\base\Widget::widget(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#12 /var/www/html/bflush/controllers/NossaController.php(57): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\NossaController->actionIndex()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#20 {main}
+2018-05-26 13:45:49 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => '6PM0fdEQPo5J-PIK1og_Y5lUpoPQmHFiBwXLM3fWO-m-sAUxvEYO1mSAmE-Z71Mu1zrEsqWvCxRPR6VdWqZquQ=='
+    'date_range' => '2018-05-26 13:45'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3hdgdv20690s2o1j50u9dhn5d3'
+    '_csrf' => '9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=3hdgdv20690s2o1j50u9dhn5d3; _csrf=9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '48750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527317149.672
+    'REQUEST_TIME' => 1527317149
+]
+2018-05-26 14:08:12 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The "query" property must be an instance of a class that implements the QueryInterface e.g. yii\db\Query or its subclasses. in /var/www/html/bflush/vendor/yiisoft/yii2/data/ActiveDataProvider.php:102
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#11 /var/www/html/bflush/views/nossa/index.php(66): yii\base\Widget::widget(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#16 /var/www/html/bflush/controllers/NossaController.php(64): yii\base\Controller->render('index', Array)
+#17 [internal function]: app\controllers\NossaController->actionIndex()
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#24 {main}
+2018-05-26 14:08:12 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => '8iZoJzC6PiJbDa9q06GR_6EAE5M4ifYYAh49cRAznjykZVlrXewOenZ1xS-cxv2y725xok2-jG5KXFMfPUPPbA=='
+    'date_range' => '2018-05-26 14:08'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3hdgdv20690s2o1j50u9dhn5d3'
+    '_csrf' => '9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=3hdgdv20690s2o1j50u9dhn5d3; _csrf=9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '49264'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527318492.313
+    'REQUEST_TIME' => 1527318492
+]
+2018-05-26 14:08:37 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The "query" property must be an instance of a class that implements the QueryInterface e.g. yii\db\Query or its subclasses. in /var/www/html/bflush/vendor/yiisoft/yii2/data/ActiveDataProvider.php:102
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#11 /var/www/html/bflush/views/nossa/index.php(66): yii\base\Widget::widget(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossaController))
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossaController))
+#16 /var/www/html/bflush/controllers/NossaController.php(65): yii\base\Controller->render('index', Array)
+#17 [internal function]: app\controllers\NossaController->actionIndex()
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/index', Array)
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#24 {main}
+2018-05-26 14:08:37 [127.0.0.1][-][3hdgdv20690s2o1j50u9dhn5d3][info][application] $_GET = [
+    'r' => 'nossa/index'
+]
+
+$_POST = [
+    '_csrf' => '06E94Ye_CRfoOnUNg6w2tAsL0ZfTvX2M1i2XDzdHXDOF4gyt6uk5T8VCH0jMy1r5RWWzpqaKB_qeb_lhGjcNYw=='
+    'date_range' => '2018-05-26 14:08'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3hdgdv20690s2o1j50u9dhn5d3'
+    '_csrf' => '9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'HTTP_COOKIE' => 'PHPSESSID=3hdgdv20690s2o1j50u9dhn5d3; _csrf=9aad53ca330c3cd26a3707a541eb2a395b9c123574d1e93a506165363cc80a92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VC1LmV0X-xjEOglMNnb1u7zvHBnn-pQP%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '49274'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527318517.783
+    'REQUEST_TIME' => 1527318517
+]
