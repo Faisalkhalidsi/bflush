@@ -5,6 +5,7 @@ namespace app\controllers;
 use yii;
 use app\models\NossfOsmOrderQueue;
 use yii\db\Expression;
+use yii\data\ActiveDataProvider;
 
 class NossfOsmController extends \yii\web\Controller {
 
@@ -48,19 +49,49 @@ class NossfOsmController extends \yii\web\Controller {
                     ->groupBy(['waktu'])
                     ->asArray()
                     ->all();
-            $labelData=[];
-            $dataQueue=[];
+            $labelData = [];
+            $dataQueue = [];
             foreach ($modelData as $i) {
                 $labelData[] = $i['waktu'];
                 $dataQueue[] = $i['MAX(queued)'];
             }
 
             $data['waktu'] = $labelData;
-            $data['queue']= $dataQueue;
+            $data['queue'] = $dataQueue;
 
             return json_encode($data);
         }
         return "error";
+    }
+
+    public function actionOrderqueue() {
+        if (Yii::$app->request->post("date_range")) {
+            $jam = explode(" ", Yii::$app->request->post("date_range"));
+            $jamH = $jam[1];
+            $jamHH = explode(":", $jamH);
+            $jamReal = $jamHH[0];
+            $jamMenit = $jamHH[1];
+
+            $dataProvider = new ActiveDataProvider([
+                'query' => NossfOsmOrderQueue::find()
+//                        ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
+//                        ->where(['=', 'waktu', Yii::$app->request->post("date_range")])
+                        ->where(["HOUR(waktu)" => $jamReal])
+                        ->andWhere(["DATE(waktu)" => $jam[0]])
+                        ->andWhere(["MINUTE(waktu)" => $jamMenit])
+                    ,
+            ]);
+        } else {
+            $dataProvider = new ActiveDataProvider([
+                'query' => NossfOsmOrderQueue::find()
+//                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
+                        ->where(['=', 'waktu', NossfOsmOrderQueue::find()->select('waktu')->orderBy(['waktu' => SORT_DESC])->limit(1)])
+                    ,
+            ]);
+        }
+        return $this->render('orderQueue', [
+                    'dataProvider' => $dataProvider,
+        ]);
     }
 
 }

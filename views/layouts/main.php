@@ -44,7 +44,7 @@ AppAsset::register($this);
                     ['label' => 'NOSSA', 'url' => ['/nossa/index']],
 //                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],
                     ['label' => 'NOSSF-OSM', 'items' => [
-                            ['label' => 'Queue List', 'url' => '#'],
+                            ['label' => 'Queue List', 'url' => ['/nossf-osm/orderqueue']],
                             ['label' => 'Queue Graph', 'url' => ['/nossf-osm/index']],
                         ],
                     ],

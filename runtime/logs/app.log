@@ -12735,3 +12735,643 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1527318517.783
     'REQUEST_TIME' => 1527318517
 ]
+2018-05-27 15:34:04 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][Error] Error: Class 'app\controllers\ActiveDataProvider' not found in /var/www/html/bflush/controllers/NossfOsmController.php:84
+Stack trace:
+#0 [internal function]: app\controllers\NossfOsmController->actionOrderqueue()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('orderqueue', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/order...', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#7 {main}
+2018-05-27 15:34:04 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/orderqueue'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38446'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm/orderqueue'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm/orderqueue'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435244.78
+    'REQUEST_TIME' => 1527435244
+]
+2018-05-27 15:34:20 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][Error] Error: Class 'app\controllers\NossaStatusIntegrasi' not found in /var/www/html/bflush/controllers/NossfOsmController.php:86
+Stack trace:
+#0 [internal function]: app\controllers\NossfOsmController->actionOrderqueue()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('orderqueue', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/order...', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#7 {main}
+2018-05-27 15:34:20 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/orderqueue'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38450'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm/orderqueue'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm/orderqueue'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435260.3
+    'REQUEST_TIME' => 1527435260
+]
+2018-05-27 15:35:42 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][Error] Error: Class 'app\controllers\NossaStatusIntegrasi' not found in /var/www/html/bflush/controllers/NossfOsmController.php:88
+Stack trace:
+#0 [internal function]: app\controllers\NossfOsmController->actionOrderqueue()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('orderqueue', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/order...', Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#7 {main}
+2018-05-27 15:35:42 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/orderqueue'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38456'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm/orderqueue'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm/orderqueue'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435342.725
+    'REQUEST_TIME' => 1527435342
+]
+2018-05-27 22:35:57 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\NossfOsmOrderQueue::integration_type in /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('integration_typ...')
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('integration_typ...')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\NossfOsmOrderQueue), 'integration_typ...')
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /var/www/html/bflush/views/nossf-osm/orderqueue.php(59): yii\base\Widget::widget(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#19 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('orderqueue', Array, Object(app\controllers\NossfOsmController))
+#20 /var/www/html/bflush/controllers/NossfOsmController.php(93): yii\base\Controller->render('orderqueue', Array)
+#21 [internal function]: app\controllers\NossfOsmController->actionOrderqueue()
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('orderqueue', Array)
+#25 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/order...', Array)
+#26 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#28 {main}
+2018-05-27 22:35:57 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/orderqueue'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38460'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm/orderqueue'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm/orderqueue'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435357.891
+    'REQUEST_TIME' => 1527435357
+]
+2018-05-27 22:36:58 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\NossfOsmOrderQueue::queue in /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('queue')
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('queue')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\NossfOsmOrderQueue), 'queue')
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\NossfOsmOrderQueue), 20435, 0)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /var/www/html/bflush/views/nossf-osm/orderqueue.php(59): yii\base\Widget::widget(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#19 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('orderqueue', Array, Object(app\controllers\NossfOsmController))
+#20 /var/www/html/bflush/controllers/NossfOsmController.php(93): yii\base\Controller->render('orderqueue', Array)
+#21 [internal function]: app\controllers\NossfOsmController->actionOrderqueue()
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('orderqueue', Array)
+#25 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/order...', Array)
+#26 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#28 {main}
+2018-05-27 22:36:58 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/orderqueue'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38474'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm/orderqueue'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm/orderqueue'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435418.358
+    'REQUEST_TIME' => 1527435418
+]
+2018-05-27 22:40:38 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][ParseError] ParseError: syntax error, unexpected ''/nossf-osm/orderqueue'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /var/www/html/bflush/views/layouts/main.php:47
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<h3>Queue OSM O...')
+#3 /var/www/html/bflush/controllers/NossfOsmController.php(35): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\NossfOsmController->actionIndex()
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#11 {main}
+2018-05-27 22:40:38 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bflush/web/index.php'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527435638.662
+    'REQUEST_TIME' => 1527435638
+]
+2018-05-27 22:51:07 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\chartjs\ChartJs::plugins in /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('plugins', Object(yii\web\JsExpression))
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\chartjs\ChartJs), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\chart...', Array, Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\chart...', Array, Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/bflush/views/nossf-osm/index.php(125): yii\base\Widget::widget(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossfOsmController))
+#12 /var/www/html/bflush/controllers/NossfOsmController.php(35): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\NossfOsmController->actionIndex()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/index', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#20 {main}
+2018-05-27 22:51:07 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '38996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527436267.921
+    'REQUEST_TIME' => 1527436267
+]
+2018-05-27 22:52:52 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\chartjs\ChartJs::plugins in /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('plugins', Object(yii\web\JsExpression))
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\chartjs\ChartJs), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\chart...', Array, Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\chart...', Array, Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/bflush/views/nossf-osm/index.php(124): yii\base\Widget::widget(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossfOsmController))
+#12 /var/www/html/bflush/controllers/NossfOsmController.php(35): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\NossfOsmController->actionIndex()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/index', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#20 {main}
+2018-05-27 22:52:52 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '39028'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527436372.256
+    'REQUEST_TIME' => 1527436372
+]
+2018-05-27 22:52:52 [127.0.0.1][-][8flt42bocim284omajgcperc3p][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\chartjs\ChartJs::plugins in /var/www/html/bflush/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('plugins', Object(yii\web\JsExpression))
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\chartjs\ChartJs), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\chart...', Array, Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\chart...', Array, Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/bflush/views/nossf-osm/index.php(124): yii\base\Widget::widget(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\NossfOsmController))
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\NossfOsmController))
+#12 /var/www/html/bflush/controllers/NossfOsmController.php(35): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\NossfOsmController->actionIndex()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossf-osm/index', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#20 {main}
+2018-05-27 22:52:52 [127.0.0.1][-][8flt42bocim284omajgcperc3p][info][application] $_GET = [
+    'r' => 'nossf-osm/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8flt42bocim284omajgcperc3p'
+    '_csrf' => '7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=8flt42bocim284omajgcperc3p; _csrf=7bb6ba6e7337abe2870103b6abe30404364f46d0b11563f847dac94fda0d175ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mguIGtI9kNlCPCIx_D7x2YXbTg_9gGQe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '39032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=nossf-osm%2Findex'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossf-osm%2Findex'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527436372.924
+    'REQUEST_TIME' => 1527436372
+]

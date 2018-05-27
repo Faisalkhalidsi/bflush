@@ -19,7 +19,7 @@ $('#showBtn').on('click', function (e) {
         success: function (data) {
 //            alert(data.length);
             if (data.length == 23) {
-                   alert("Empty Data..!");
+                alert("Empty Data..!");
             } else {
                 var data = $.parseJSON(data);
                 var chartdata = {
@@ -37,7 +37,7 @@ $('#showBtn').on('click', function (e) {
                             pointHoverBorderColor: 'rgba(255,99,132,1)',
                             data: data["queue"]
                         }
-                    ]
+                    ],
                 };
                 var ctx = $("#osmQueueCrx");
                 var barGraph = new Chart(ctx, {
@@ -76,3 +76,15 @@ $('#showBtn').on('click', function (e) {
         }
     });
 });
+
+
+
+
+
+//$('#osmQueueCrx').on('click', function (e) {
+//    var ctx = $("#osmQueueCrx");
+//    var barGraph = new Chart(ctx);
+////    var x_value = ctx.data.labels[e._index];
+////    var y_value = ctx.data.datasets[0].data[e._index];
+////    console.log(barGraph.data);
+//});

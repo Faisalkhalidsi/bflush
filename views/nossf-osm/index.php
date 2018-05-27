@@ -107,8 +107,9 @@ HTML;
             'hover' => [
                 'mode' => true
             ],
-//            'maintainAspectRatio' => false,
+            'maintainAspectRatio' => true,
         ],
+//        'plugins' => new \yii\web\JsExpression(''),
         'data' => [
             'labels' => $data,
             'datasets' => [
