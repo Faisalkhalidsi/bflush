@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'defaultRoute' => 'nossf-osm/index',
+    'defaultRoute' => 'event/index',
     'basePath' => dirname(__DIR__),
 //    'bootstrap' => ['log'],
     'bootstrap' => ['log'],
