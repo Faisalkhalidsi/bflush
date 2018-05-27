@@ -17,6 +17,7 @@ use app\models\NossfUimTablespace;
 use app\models\NossfUimSessionServer;
 use app\models\NossaSessionAppl;
 use app\models\NossaSessionDb;
+use app\models\NossaDbStatus;
 
 /**
  * @author Faisal Khalid <faisal.khalid@telkom.coid>
@@ -501,7 +502,6 @@ class GetController extends Controller {
         $limit = 2000;
         $init = 20;
 
-//        echo $words[$init];
         $step = $init;
         $fee = 0;
         $ketemu = FALSE;
@@ -511,18 +511,16 @@ class GetController extends Controller {
             } else {
                 if ($fee == 0) {
                     $fee = 6;
-                    $wkt = $words[$step] . " " . $words[$step + 1];
+
+                    $wkt = $words[$step + 3]." ".$words[$step + 4];
+                    date_default_timezone_set('Asia/Jakarta');
                     $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
-                    
-                    echo $words[$step]."|".$words[$step+1]."|".$words[$step+2]."|".$words[$step+3]."|".$words[$step+4]."|".$words[$step+5]."]";
-
-//                    $modelNossaSessionAppl = new NossaSessionAppl();
-//                    $modelNossaSessionAppl->server_name = $words[$step + 2];
-//                    $modelNossaSessionAppl->session_total = $words[$step + 3];
-//                    $modelNossaSessionAppl->status = $words[$step + 4];
-//                    $modelNossaSessionAppl->waktu = $waktuNya;
-//                    $modelNossaSessionAppl->save();
-
+                    $modelNossaDBStatus = new NossaDbStatus();
+                    $modelNossaDBStatus->instance_name = $words[$step + 2];
+                    $modelNossaDBStatus->hostname = $words[$step + 2];
+                    $modelNossaDBStatus->uptime = $waktuNya;
+                    $modelNossaDBStatus->status = $words[$step + 5];
+                    $modelNossaDBStatus->save();
                     $step = $step + 6;
                 } else {
                     $fee--;
