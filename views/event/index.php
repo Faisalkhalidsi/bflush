@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
 use yii\widgets\Pjax;
 use yii\bootstrap\Modal;
 
@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]);  ?>
     <?php
     Modal::begin([
-        'header' => '<h4>Event</h4>',
+//        'header' => '<h4>Detail Event</h4>',
         'id' => 'model',
         'size' => 'model-lg',
     ]);
@@ -38,11 +38,19 @@ $this->params['breadcrumbs'][] = $this->title;
     <?=
     yii2fullcalendar\yii2fullcalendar::widget([
         'events' => $events,
-//        'options' => [
-////            'lang' => 'de',
-//        //... more options to be defined here!
-//        ],
-//        'events' => Url::to(['/timetrack/default/jsoncalendar'])
+        'clientOptions' => [
+//            'language' => 'fa',
+            'eventLimit' => TRUE,
+            'theme' => true,
+            'fixedWeekCount' => false,
+            'eventClick' => new \yii\web\JsExpression("function(calEvent, jsEvent, view) {
+                $.get('index.php?r=event/view', {'id': calEvent.id}, function (data) {
+                    $('.modal').modal('show')
+                            .find('#modelContent')
+                            .html(data);
+                });
+            }"),
+        ],
     ]);
     ?>
 

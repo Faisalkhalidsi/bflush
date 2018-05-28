@@ -6,7 +6,6 @@
 
 
 $('#showBtn').on('click', function (e) {
-
     var startParam = $('#startParam').val();
     var endParam = $('#endParam').val();
     $.ajax({
@@ -17,7 +16,6 @@ $('#showBtn').on('click', function (e) {
             end: endParam
         },
         success: function (data) {
-//            alert(data.length);
             if (data.length == 23) {
                 alert("Empty Data..!");
             } else {
@@ -44,8 +42,6 @@ $('#showBtn').on('click', function (e) {
                     type: 'line',
                     data: chartdata,
                     options: {
-//                    height: 3,
-//                    width: 10
                         legend: {
                             display: true,
                             position: 'left'
@@ -54,37 +50,7 @@ $('#showBtn').on('click', function (e) {
 
 
                 });
-//
-//            for (var i in data) {
-//                player.push(data[i].waktu);
-//                score.push(data[i].queue);
-//            }
-//            alert(data["waktu"]);
-
-//            alert(player);
-//            console.log(json["waktu"]);
-//            alert(json["waktu"]);
-//            $(json).each(function (i, val) {
-//                $.each(val, function (k, v) {
-//                    alert(k[V]);
-////                    console.log(k + " : " + v);
-//                });
-//            });
-//            alert(data);
-                // process data
             }
         }
     });
 });
-
-
-
-
-
-//$('#osmQueueCrx').on('click', function (e) {
-//    var ctx = $("#osmQueueCrx");
-//    var barGraph = new Chart(ctx);
-////    var x_value = ctx.data.labels[e._index];
-////    var y_value = ctx.data.datasets[0].data[e._index];
-////    console.log(barGraph.data);
-//});

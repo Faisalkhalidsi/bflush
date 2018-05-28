@@ -37,7 +37,7 @@ class EventController extends Controller {
 //        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $events = Event::find()->all();
 
-        $tasks=[];
+        $tasks = [];
         foreach ($events as $eventnya) {
             $event = new \yii2fullcalendar\models\Event();
             $event->id = $eventnya->id;
@@ -58,7 +58,7 @@ class EventController extends Controller {
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id) {
-        return $this->render('view', [
+        return $this->renderAjax('view', [
                     'model' => $this->findModel($id),
         ]);
     }
@@ -92,7 +92,7 @@ class EventController extends Controller {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'id' => $model->id]);
         }
 
         return $this->render('update', [

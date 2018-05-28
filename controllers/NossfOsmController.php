@@ -65,33 +65,35 @@ class NossfOsmController extends \yii\web\Controller {
     }
 
     public function actionOrderqueue() {
-        if (Yii::$app->request->post("date_range")) {
-            $jam = explode(" ", Yii::$app->request->post("date_range"));
-            $jamH = $jam[1];
-            $jamHH = explode(":", $jamH);
-            $jamReal = $jamHH[0];
-            $jamMenit = $jamHH[1];
-
-            $dataProvider = new ActiveDataProvider([
-                'query' => NossfOsmOrderQueue::find()
-//                        ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
-//                        ->where(['=', 'waktu', Yii::$app->request->post("date_range")])
-                        ->where(["HOUR(waktu)" => $jamReal])
-                        ->andWhere(["DATE(waktu)" => $jam[0]])
-                        ->andWhere(["MINUTE(waktu)" => $jamMenit])
-                    ,
-            ]);
-        } else {
-            $dataProvider = new ActiveDataProvider([
-                'query' => NossfOsmOrderQueue::find()
+        $dataProvider = new ActiveDataProvider([
+            'query' => NossfOsmOrderQueue::find()
 //                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
-                        ->where(['=', 'waktu', NossfOsmOrderQueue::find()->select('waktu')->orderBy(['waktu' => SORT_DESC])->limit(1)])
-                    ,
-            ]);
-        }
+                    ->where(['=', 'waktu', NossfOsmOrderQueue::find()->select('waktu')->orderBy(['waktu' => SORT_DESC])->limit(1)])
+                ,
+        ]);
         return $this->render('orderQueue', [
                     'dataProvider' => $dataProvider,
         ]);
     }
 
+    public function actionAjaxorderqueue($date) {
+        $jam = explode(" ", $date);
+        $jamH = $jam[1];
+        $jamHH = explode(":", $jamH);
+        $jamReal = $jamHH[0];
+        $jamMenit = $jamHH[1];
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => NossfOsmOrderQueue::find()
+//                        ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
+//                        ->where(['=', 'waktu', Yii::$app->request->post("date_range")])
+                    ->where(["HOUR(waktu)" => $jamReal])
+                    ->andWhere(["DATE(waktu)" => $jam[0]])
+                    ->andWhere(["MINUTE(waktu)" => $jamMenit])
+                ,
+        ]);
+        return $this->renderAjax('_queue', [
+                    'dataProvider' => $dataProvider,
+        ]);
+    }
 }

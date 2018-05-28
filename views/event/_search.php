@@ -10,13 +10,15 @@ use yii\widgets\ActiveForm;
 
 <div class="event-search">
 
-    <?php $form = ActiveForm::begin([
-        'action' => ['index'],
-        'method' => 'get',
-        'options' => [
-            'data-pjax' => 1
-        ],
-    ]); ?>
+    <?php
+    $form = ActiveForm::begin([
+                'action' => ['index'],
+                'method' => 'get',
+                'options' => [
+                    'data-pjax' => 1
+                ],
+    ]);
+    ?>
 
     <?= $form->field($model, 'id') ?>
 

@@ -12,9 +12,9 @@ $(function () {
                     .html(data);
         });
     });
-    
+
     $(document).on('click', '.fc-content', function () {
-        
+
         console.log($($(this).attr('data-date')));
 //        var date = $(this).attr('data-date');
 //        $.get('index.php?r=event/create', {'date': date}, function (data) {
@@ -24,4 +24,5 @@ $(function () {
 //        });
     });
     
+
 });

@@ -1,11 +1,16 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
 //use yii\widgets\Pjax;
-use yii\widgets\ActiveForm;
+//use yii\widgets\ActiveForm;
 use kartik\daterange\DateRangePicker;
 
+$this->registerJsFile("@web/js/osmQueueList.js", [
+    'depends' => [
+        \yii\web\JqueryAsset::className()
+    ]
+]);
 
 $this->title = 'OSM Order Queued';
 $this->params['breadcrumbs'][] = $this->title;
@@ -16,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <hr>
     <div class="row">
-        <?php $form = ActiveForm::begin(); ?>
+        <?php // $form = ActiveForm::begin(); ?>
         <div class="col-sm-4"></div>
         <div class="col-sm-3">
             <?php
@@ -53,20 +58,11 @@ HTML;
         </div>
     </div>
     <hr>
-
     <?=
-    GridView::widget([
+    $this->render('_queue', [
         'dataProvider' => $dataProvider,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-//            'id',
-            'task_description',
-            'queued',
-            'waktu',
-//            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]);
+    ])
     ?>
-    <?php ActiveForm::end(); ?>
+    <?php // ActiveForm::end(); ?>
 
 </div>
