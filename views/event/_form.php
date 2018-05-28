@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\date\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Event */
@@ -16,7 +17,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'created_date')->textInput(['readOnly'=> true]) ?>
+
+
+    <?= $form->field($model, 'created_date')->textInput(['readOnly' => true]) ?>
+    <?php
+    echo '<label>Check Issue Date</label>';
+    echo DatePicker::widget([
+        'name' => 'Event[end_date]',
+        'value' => date('Y-m-d'),
+        'options' => ['placeholder' => 'Select end date ...'],
+        'pluginOptions' => [
+            'format' => 'yyyy-mm-dd',
+            'autoclose' => true,
+            'todayHighlight' => true
+        ]
+    ]);
+    ?>
+
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

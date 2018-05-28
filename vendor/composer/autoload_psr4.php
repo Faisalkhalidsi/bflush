@@ -18,6 +18,7 @@ return array(
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'keltstr\\simplehtmldom\\' => array($vendorDir . '/keltstr/yii2-simplehtmldom'),
     'kartik\\daterange\\' => array($vendorDir . '/kartik-v/yii2-date-range'),
+    'kartik\\date\\' => array($vendorDir . '/kartik-v/yii2-widget-datepicker'),
     'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
     'dosamigos\\chartjs\\' => array($vendorDir . '/2amigos/yii2-chartjs-widget/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),

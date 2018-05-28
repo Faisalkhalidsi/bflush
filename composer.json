@@ -21,7 +21,8 @@
         "keltstr/yii2-simplehtmldom": "dev-master",
         "2amigos/yii2-chartjs-widget": "~2.0",
         "kartik-v/yii2-date-range": "*",
-        "philippfrenzel/yii2fullcalendar": "*"
+        "philippfrenzel/yii2fullcalendar": "*",
+        "kartik-v/yii2-widget-datepicker": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

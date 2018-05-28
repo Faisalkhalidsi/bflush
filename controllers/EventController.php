@@ -43,6 +43,7 @@ class EventController extends Controller {
             $event->id = $eventnya->id;
             $event->title = $eventnya->title;
             $event->start = $eventnya->created_date;
+            $event->end = $eventnya->end_date;
             $tasks[] = $event;
         }
 
