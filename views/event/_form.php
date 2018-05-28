@@ -21,7 +21,7 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'created_date')->textInput(['readOnly' => true]) ?>
     <?php
-    echo '<label>Check Issue Date</label>';
+    echo '<label>End Date</label>';
     echo DatePicker::widget([
         'name' => 'Event[end_date]',
         'value' => date('Y-m-d'),

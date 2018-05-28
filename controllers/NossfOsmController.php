@@ -10,7 +10,7 @@ use yii\data\ActiveDataProvider;
 class NossfOsmController extends \yii\web\Controller {
 
     public function actionIndex() {
-        $request = Yii::$app->request;
+//        $request = Yii::$app->request;
         $timeParam = 'DATE_SUB(NOW(), INTERVAL 3 HOUR)';
 //        $dataLabel = NossfOsmOrderQueue::find()
 //                ->select(['waktu'])

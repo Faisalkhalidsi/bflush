@@ -4,10 +4,12 @@ namespace app\controllers;
 
 use Yii;
 use app\models\NossaStatusIntegrasi;
+use app\models\NossaWorkorderTotal;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\db\Expression;
 
 /**
  * NossaController implements the CRUD actions for NossaStatusIntegrasi model.
@@ -45,7 +47,7 @@ class NossaController extends Controller {
 //                        ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
 //                        ->where(['=', 'waktu', Yii::$app->request->post("date_range")])
                         ->where(["HOUR(waktu)" => $jamReal])
-                        ->andWhere(["DATE(waktu)" =>$jam[0]])
+                        ->andWhere(["DATE(waktu)" => $jam[0]])
                         ->andWhere(["MINUTE(waktu)" => $jamMenit])
                     ,
             ]);
@@ -80,6 +82,46 @@ class NossaController extends Controller {
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionDbstatus() {
+        $timeParam = 'DATE_SUB(NOW(), INTERVAL 1 HOUR)';
+        $data = NossaWorkorderTotal::find()
+                ->select(['workorder_total', 'waktu'])
+                ->where(['>', 'waktu', new Expression($timeParam)])
+                ->asArray()
+                ->all();
+        foreach ($data as $i) {
+            $labelData[] = $i['waktu'];
+        }
+
+        foreach ($data as $i) {
+            $dataQueue[] = $i['workorder_total'];
+        }
+
+
+        $dataSessionDB = \app\models\NossaSessionDbTotal::find()
+                ->select(['session_total', 'waktu'])
+                ->where(['>', 'waktu', new Expression($timeParam)])
+                ->asArray()
+                ->all();
+        foreach ($dataSessionDB as $i) {
+            $labelDataSessionDB[] = $i['waktu'];
+        }
+
+        foreach ($dataSessionDB as $i) {
+            $dataQueueSessionDB[] = $i['session_total'];
+        }
+
+        return $this->render('dbStatus', [
+                    'data' => $labelData,
+                    'dataOwn' => $dataQueue,
+                    'dataSessionDB' => $labelDataSessionDB,
+                    'dataOwnSessionDB' =>  $dataQueueSessionDB,
+        ]);
+
+
+//        return $this->render('dbStatus');
     }
 
 }

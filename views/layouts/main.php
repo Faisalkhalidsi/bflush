@@ -41,7 +41,12 @@ AppAsset::register($this);
                     ['label' => 'Event', 'url' => ['/event/index']],
 //                    ['label' => 'About', 'url' => ['/site/about']],
 //                    ['label' => 'Contact', 'url' => ['/site/contact']],
-                    ['label' => 'NOSSA', 'url' => ['/nossa/index']],
+//                    ['label' => 'NOSSA', 'url' => ['/nossa/index']],
+                    ['label' => 'NOSSA', 'items' => [
+                            ['label' => 'Integration Status', 'url' => ['/nossa/index']],
+                            ['label' => 'DB Status', 'url' => ['nossa/dbstatus']],
+                        ],
+                    ],
 //                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],
                     ['label' => 'NOSSF-OSM', 'items' => [
                             ['label' => 'Queue List', 'url' => ['/nossf-osm/orderqueue']],
