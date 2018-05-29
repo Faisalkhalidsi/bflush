@@ -15,7 +15,7 @@ use yii\grid\GridView;
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-//            'id',
+            'flow',
             'task_description',
             'queued',
             'waktu',
