@@ -43,8 +43,8 @@ AppAsset::register($this);
 //                    ['label' => 'Contact', 'url' => ['/site/contact']],
 //                    ['label' => 'NOSSA', 'url' => ['/nossa/index']],
                     ['label' => 'NOSSA', 'items' => [
-                            ['label' => 'Integration Status', 'url' => ['/nossa/index']],
                             ['label' => 'DB Status', 'url' => ['nossa/dbstatus']],
+                            ['label' => 'Integration Status', 'url' => ['/nossa/index']],
                         ],
                     ],
 //                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],

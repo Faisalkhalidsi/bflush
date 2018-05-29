@@ -162,6 +162,7 @@ class GetController extends Controller {
 
                     if ($words[$step + 1] != "rows") {
 //                        echo $words[$step] . "|" . $words[$step + 1] . "|" . $words[$step + 2] . "|" . $waktuNya . "||";
+                        echo $words[$step+1] . "|";
                         $modelNossfOsmQueue = new NossfOsmOrderQueue();
                         $modelNossfOsmQueue->flow = $words[$step];
                         $modelNossfOsmQueue->task_description = $words[$step + 1];
@@ -516,7 +517,7 @@ class GetController extends Controller {
                     date_default_timezone_set('Asia/Jakarta');
                     $waktuNya = date('Y-m-d H:i:s', strtotime($wkt));
                     $modelNossaDBStatus = new NossaDbStatus();
-                    $modelNossaDBStatus->instance_name = $words[$step + 2];
+                    $modelNossaDBStatus->instance_name = $words[$step + 1];
                     $modelNossaDBStatus->hostname = $words[$step + 2];
                     $modelNossaDBStatus->uptime = $waktuNya;
                     $modelNossaDBStatus->status = $words[$step + 5];
