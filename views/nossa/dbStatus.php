@@ -7,24 +7,41 @@
 
 use dosamigos\chartjs\ChartJs;
 use yii\bootstrap\Html;
+use yii\grid\GridView;
 
 $this->title = 'NOSSA DB Status';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="nossa-status-integrasi-index">
     <hr>
+    <div class="row">
+        <?=
+        GridView::widget([
+            'showFooter' => false,
+            'showHeader' => true,
+            'dataProvider' => $dataProvider,
+            'columns' => [
+                'instance_name',
+                'hostname',
+                'uptime',
+                'status',
+            ],
+        ]);
+        ?>
+    </div>
+    <hr>
     <div class = "row">
         <div class = "col-sm-5">
             <div id="chart" class="center-block">
-                <center><h4>Work Order Total </h4></center>
+                <center><h4><?= Html::a("Work Order Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
                 <?=
                 ChartJs::widget([
                     'id' => 'nossaWorkOrderCrx',
                     'type' => 'line',
-                    'options' => [
-                        'height' => 3,
-                        'width' => 10,
-                    ],
+//                    'options' => [
+//                        'height' => 3,
+//                        'width' => 15,
+//                    ],
                     'clientOptions' => [
                         'legend' => [
                             'display' => false,
@@ -63,15 +80,11 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
         <div class = "col-sm-5">
             <div id="chart" class="center-block">
-                <center><h4>Session DB Total </h4></center>
+                <center><h4><?= Html::a("Session DB Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
                 <?=
                 ChartJs::widget([
                     'id' => 'nossaSessionDBCrx',
                     'type' => 'line',
-                    'options' => [
-                        'height' => 3,
-                        'width' => 10,
-                    ],
                     'clientOptions' => [
                         'legend' => [
                             'display' => false,
@@ -93,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'labels' => $dataSessionDB,
                         'datasets' => [
                             [
-                                'label' => "Work Order Total",
+                                'label' => "Session DB Total",
                                 'backgroundColor' => "rgba(0,0,255,0)",
                                 'borderColor' => "rgba(0,0,255,0.5)",
                                 'pointBackgroundColor' => "rgba(255,99,132,1)",

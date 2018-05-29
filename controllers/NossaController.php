@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\db\Expression;
+use yii\data\ArrayDataProvider;
 
 /**
  * NossaController implements the CRUD actions for NossaStatusIntegrasi model.
@@ -86,6 +87,7 @@ class NossaController extends Controller {
 
     public function actionDbstatus() {
         $timeParam = 'DATE_SUB(NOW(), INTERVAL 1 HOUR)';
+        // work order
         $data = NossaWorkorderTotal::find()
                 ->select(['workorder_total', 'waktu'])
                 ->where(['>', 'waktu', new Expression($timeParam)])
@@ -99,7 +101,7 @@ class NossaController extends Controller {
             $dataQueue[] = $i['workorder_total'];
         }
 
-
+        //db session
         $dataSessionDB = \app\models\NossaSessionDbTotal::find()
                 ->select(['session_total', 'waktu'])
                 ->where(['>', 'waktu', new Expression($timeParam)])
@@ -113,11 +115,21 @@ class NossaController extends Controller {
             $dataQueueSessionDB[] = $i['session_total'];
         }
 
+        //nossa db uptime
+        $dataProvider = new ArrayDataProvider([
+            'allModels' => \app\models\NossaDbStatus::find()
+                    ->orderBy(['id' => SORT_DESC])
+                    ->groupBy(['hostname', 'uptime'])
+                    ->limit(2)
+                    ->all(),
+        ]);
+
         return $this->render('dbStatus', [
                     'data' => $labelData,
                     'dataOwn' => $dataQueue,
                     'dataSessionDB' => $labelDataSessionDB,
-                    'dataOwnSessionDB' =>  $dataQueueSessionDB,
+                    'dataOwnSessionDB' => $dataQueueSessionDB,
+                    'dataProvider' => $dataProvider,
         ]);
 
 
