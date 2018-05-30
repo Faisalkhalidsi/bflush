@@ -30,6 +30,43 @@ $this->params['breadcrumbs'][] = $this->title;
         ?>
     </div>
     <hr>
+    <div class="row">
+        <div id="chart" class="center-block">
+            <center><h4><?= Html::a("Appl Session Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
+            <?=
+            ChartJs::widget([
+                'id' => 'nossaSessionApplCrx',
+                'type' => 'line',
+                    'options' => [
+                    'height' => 3,
+                    'width' => 15,
+                ],
+                'clientOptions' => [
+                    'legend' => [
+                        'display' => false,
+                        'position' => 'left',
+                        'labels' => [
+                            'fontColor' => "#425062",
+                        ]
+                    ],
+                    'tooltips' => [
+                        'enabled' => true,
+                        'intersect' => true
+                    ],
+                    'hover' => [
+                        'mode' => true
+                    ],
+                    'maintainAspectRatio' => true,
+                ],
+                'data' => [
+                    'labels' => $data,
+                    'datasets' =>$packets
+                ]
+            ]);
+            ?>
+        </div>
+    </div>
+    <hr>
     <div class = "row">
         <div class = "col-sm-5">
             <div id="chart" class="center-block">

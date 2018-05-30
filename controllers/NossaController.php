@@ -87,6 +87,7 @@ class NossaController extends Controller {
 
     public function actionDbstatus() {
         $timeParam = 'DATE_SUB(NOW(), INTERVAL 1 HOUR)';
+        $timeParam2 = 'DATE_SUB(NOW(), INTERVAL 6 HOUR)';
         // work order
         $data = NossaWorkorderTotal::find()
                 ->select(['workorder_total', 'waktu'])
@@ -124,16 +125,44 @@ class NossaController extends Controller {
                     ->all(),
         ]);
 
+        //nossa session appl
+        $dataSessionApplLabel = \app\models\NossaSessionAppl::find()
+                ->groupBy(['server_name'])
+                ->asArray()
+                ->all();
+
+        $allPackets = [];
+        for ($i = 0; $i < sizeof($dataSessionApplLabel); $i++) {
+            $packets = [];
+            $packets['label'] = $dataSessionApplLabel[$i]["server_name"];
+            $dataSessionApplData = \app\models\NossaSessionAppl::find()
+                    ->where(['>', 'waktu', new Expression($timeParam2)])
+                    ->andWhere(['server_name' => $dataSessionApplLabel[$i]["server_name"]])
+                    ->asArray()
+                    ->all();
+
+            $dataData = [];
+            foreach ($dataSessionApplData as $j) {
+                $dataData[] = $j['session_total'];
+            }
+            $packets['backgroundColor'] = "rgba(0,0,255,0)";
+            $packets['borderColor'] = "rgba(0,0,255,0.5)";
+            $packets['pointBackgroundColor'] = "rgba(255,99,132,1)";
+            $packets['pointBorderColor'] = "#fff";
+            $packets['pointHoverBackgroundColor'] = "#fff";
+            $packets['pointHoverBorderColor'] = "rgba(255,99,132,1)";
+            $packets['data'] = $dataData;
+            array_push($allPackets, $packets);
+        }
+
         return $this->render('dbStatus', [
+                    'packets' => $allPackets,
                     'data' => $labelData,
                     'dataOwn' => $dataQueue,
                     'dataSessionDB' => $labelDataSessionDB,
                     'dataOwnSessionDB' => $dataQueueSessionDB,
                     'dataProvider' => $dataProvider,
         ]);
-
-
-//        return $this->render('dbStatus');
     }
 
 }
