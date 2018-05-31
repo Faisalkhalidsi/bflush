@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <hr>
     <div class="row">
         <div id="chart" class="center-block">
-            <center><h4><?= Html::a("Appl Session Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
+            <center><h4><?= Html::a("Appl Session Total", ['nossa/appl_session'], ['target' => '_blank']) ?></h4></center>
             <?=
             ChartJs::widget([
                 'id' => 'nossaSessionApplCrx',
@@ -59,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'maintainAspectRatio' => true,
                 ],
                 'data' => [
-                    'labels' => $data,
+                    'labels' => $dataPackets,
                     'datasets' =>$packets
                 ]
             ]);

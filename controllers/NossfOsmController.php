@@ -63,7 +63,6 @@ class NossfOsmController extends \yii\web\Controller {
         }
         return "error";
     }
-
     public function actionOrderqueue() {
         $dataProvider = new ActiveDataProvider([
             'query' => NossfOsmOrderQueue::find()
@@ -96,4 +95,5 @@ class NossfOsmController extends \yii\web\Controller {
                     'dataProvider' => $dataProvider,
         ]);
     }
+
 }

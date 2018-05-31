@@ -126,6 +126,17 @@ class NossaController extends Controller {
         ]);
 
         //nossa session appl
+        $dataPac = \app\models\NossaSessionAppl::find()
+                ->select(['waktu'])
+                ->where(['>', 'waktu', new Expression($timeParam2)])
+                ->groupBy(['waktu'])
+                ->asArray()
+                ->all();
+        foreach ($dataPac as $i) {
+            $labelDataPac[] = $i['waktu'];
+        }
+
+
         $dataSessionApplLabel = \app\models\NossaSessionAppl::find()
                 ->groupBy(['server_name'])
                 ->asArray()
@@ -158,11 +169,119 @@ class NossaController extends Controller {
         return $this->render('dbStatus', [
                     'packets' => $allPackets,
                     'data' => $labelData,
+                    'dataPackets' => $labelDataPac,
                     'dataOwn' => $dataQueue,
                     'dataSessionDB' => $labelDataSessionDB,
                     'dataOwnSessionDB' => $dataQueueSessionDB,
                     'dataProvider' => $dataProvider,
         ]);
+    }
+
+    public function actionAppl_session() {
+        $timeParam2 = 'DATE_SUB(NOW(), INTERVAL 6 HOUR)';
+
+        $data = \app\models\NossaSessionAppl::find()
+                ->select(['waktu'])
+                ->where(['>', 'waktu', new Expression($timeParam2)])
+                ->groupBy(['waktu'])
+                ->asArray()
+                ->all();
+        foreach ($data as $i) {
+            $labelData[] = $i['waktu'];
+        }
+
+        //nossa session appl
+        $dataSessionApplLabel = \app\models\NossaSessionAppl::find()
+                ->groupBy(['server_name'])
+                ->asArray()
+                ->all();
+
+        foreach ($dataSessionApplLabel as $i) {
+            $labelDataPac[] = $i['server_name'];
+        }
+
+        $allPackets = [];
+        for ($i = 0; $i < sizeof($dataSessionApplLabel); $i++) {
+            $packets = [];
+            $packets['label'] = $dataSessionApplLabel[$i]["server_name"];
+            $dataSessionApplData = \app\models\NossaSessionAppl::find()
+                    ->where(['>', 'waktu', new Expression($timeParam2)])
+                    ->andWhere(['server_name' => $dataSessionApplLabel[$i]["server_name"]])
+                    ->asArray()
+                    ->all();
+
+            $dataData = [];
+            foreach ($dataSessionApplData as $j) {
+                $dataData[] = $j['session_total'];
+            }
+            $packets['backgroundColor'] = "rgba(0,0,255,0)";
+            $packets['borderColor'] = "rgba(0,0,255,0.5)";
+            $packets['pointBackgroundColor'] = "rgba(255,99,132,1)";
+            $packets['pointBorderColor'] = "#fff";
+            $packets['pointHoverBackgroundColor'] = "#fff";
+            $packets['pointHoverBorderColor'] = "rgba(255,99,132,1)";
+            $packets['data'] = $dataData;
+            array_push($allPackets, $packets);
+        }
+
+        return $this->render('appl_session', [
+                    'packets' => $allPackets,
+                    'data' => $labelData,
+                    'label' => $labelDataPac,
+        ]);
+    }
+
+    public function actionAjaxapplsess() {
+        $request = Yii::$app->request;
+        $start = "'" . $request->post("start") . "'";
+        $end = "'" . $request->post("end") . "'";
+        $data = $request->post("data");
+
+
+        $dataRes = \app\models\NossaSessionAppl::find()
+                ->select(['waktu'])
+                ->where(['>', 'waktu', new Expression($start)])
+                ->andWhere(['<', 'waktu', new Expression($end)])
+                ->groupBy(['waktu'])
+                ->asArray()
+                ->all();
+        $labelData = [];
+        foreach ($dataRes as $i) {
+            $labelData[] = $i['waktu'];
+        }
+
+        //nossa session appl
+        $allPackets = [];
+        for ($i = 0; $i < sizeof($data); $i++) {
+            $packets = [];
+            $packets['label'] = $data[$i];
+            $dataSessionApplData = \app\models\NossaSessionAppl::find()
+                    ->where(['>', 'waktu', new Expression($start)])
+                    ->andWhere(['<', 'waktu', new Expression($end)])
+                    ->andWhere(['server_name' => $data[$i]])
+                    ->asArray()
+                    ->all();
+
+            $dataData = [];
+            foreach ($dataSessionApplData as $j) {
+                $dataData[] = $j['session_total'];
+            }
+            $packets['backgroundColor'] = "rgba(0,0,255,0)";
+            $packets['borderColor'] = "rgba(0,0,255,0.5)";
+            $packets['pointBackgroundColor'] = "rgba(50,99,132,1)";
+            $packets['pointBorderColor'] = "#fff";
+            $packets['pointHoverBackgroundColor'] = "#fff";
+            $packets['pointHoverBorderColor'] = "rgba(255,99,132,1)";
+            $packets['data'] = $dataData;
+            array_push($allPackets, $packets);
+        }
+
+        
+        
+        $dataKirim['allPackets'] = $allPackets;
+        $dataKirim['labelData'] = $labelData;
+
+        return json_encode($dataKirim);
     }
 
 }
