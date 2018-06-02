@@ -4,6 +4,7 @@ use yii\helpers\Html;
 //use yii\grid\GridView;
 use yii\widgets\Pjax;
 use yii\bootstrap\Modal;
+use yii\bootstrap\Button;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\EventSearch */
@@ -31,7 +32,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
     Modal::end();
     ?>
+    <p>
 
+        <?php
+        echo Button::widget([
+            'label' => 'Create Event',
+            'id' => 'createBtn',
+            'options' => ['class' => 'btn btn-success'],
+        ]);
+        ?>
+    </p>
     <?=
     yii2fullcalendar\yii2fullcalendar::widget([
         'events' => $events,
