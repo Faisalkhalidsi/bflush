@@ -4,10 +4,11 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Event;
-use app\models\EventSearch;
+//use app\models\EventSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\data\ActiveDataProvider;
 
 /**
  * EventController implements the CRUD actions for Event model.
@@ -50,6 +51,26 @@ class EventController extends Controller {
         return $this->render('index', [
                     'events' => $tasks,
         ]);
+    }
+
+    public function actionDetail() {
+        $dataProvider = new ActiveDataProvider([
+            'query' => Event::find()
+                    ->orderBy(['created_date' => SORT_DESC])
+                    ->limit(10)
+//                    ->groupBy(['created_date'])
+//                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
+//                    ->where(['=', 'created_date', NossfOsmOrderQueue::find()->select('waktu')->orderBy(['waktu' => SORT_DESC])->limit(1)])
+            ,
+            'pagination' => false,
+        ]);
+        return $this->render('detail', [
+                    'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    public function actionSummary() {
+        return $this->render('summary');
     }
 
     /**

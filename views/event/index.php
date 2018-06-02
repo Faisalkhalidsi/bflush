@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
     Modal::begin([
         'id' => 'model',
         'size' => 'model-lg',
+//        'footer' => '<a href="#" class="btn btn-success" data-dismiss="modal">Close</a>',
     ]);
 
     echo "<div id='modelContent'></div>";

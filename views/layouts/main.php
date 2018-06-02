@@ -38,17 +38,19 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Event', 'url' => ['/event/index']],
-//                    ['label' => 'About', 'url' => ['/site/about']],
-//                    ['label' => 'Contact', 'url' => ['/site/contact']],
-//                    ['label' => 'NOSSA', 'url' => ['/nossa/index']],
+//                    ['label' => 'Event', 'url' => ['/event/index']],
+                    ['label' => 'Event', 'items' => [
+                            ['label' => 'Oveview', 'url' => ['/event/index']],
+                            ['label' => 'Detail', 'url' => ['/event/detail']],
+                            ['label' => 'Summary', 'url' => ['/event/summary']],
+                        ],
+                    ],
                     ['label' => 'NOSSA', 'items' => [
                             ['label' => 'DB Status', 'url' => ['nossa/dbstatus']],
                             ['label' => 'Integration Status', 'url' => ['/nossa/index']],
                             ['label' => 'Appl Session', 'url' => ['/nossa/appl_session']],
                         ],
                     ],
-//                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],
                     ['label' => 'NOSSF-OSM', 'items' => [
                             ['label' => 'Queue List', 'url' => ['/nossf-osm/orderqueue']],
                             ['label' => 'Queue Graph', 'url' => ['/nossf-osm/index']],
