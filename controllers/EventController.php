@@ -56,6 +56,7 @@ class EventController extends Controller {
     public function actionDetail() {
         $dataProvider = new ActiveDataProvider([
             'query' => Event::find()
+//                    ->select(['title','category','created_date','description','DATEDIFF(created_date,end_Date) as duration'])
                     ->orderBy(['created_date' => SORT_DESC])
                     ->limit(10)
 //                    ->groupBy(['created_date'])

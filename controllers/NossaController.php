@@ -119,9 +119,12 @@ class NossaController extends Controller {
         //nossa db uptime
         $dataProvider = new ArrayDataProvider([
             'allModels' => \app\models\NossaDbStatus::find()
-                    ->orderBy(['id' => SORT_DESC])
-                    ->groupBy(['hostname', 'uptime'])
-                    ->limit(2)
+                    ->where(['in', 'id', \app\models\NossaDbStatus::find()->select('MAX(id)')->groupBy(['hostname'])])
+//                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
+//                    ->where(['in', 'waktu', new Expression($timeParam2)])
+//                    ->orderBy(['id' => SORT_DESC])
+//                    ->groupBy(['hostname', 'uptime'])
+//                    ->limit(2)
                     ->all(),
         ]);
 
@@ -276,8 +279,8 @@ class NossaController extends Controller {
             array_push($allPackets, $packets);
         }
 
-        
-        
+
+
         $dataKirim['allPackets'] = $allPackets;
         $dataKirim['labelData'] = $labelData;
 

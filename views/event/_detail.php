@@ -19,6 +19,8 @@ GridView::widget([
         'title',
         'category',
         'created_date',
+        'end_date',
+//        'duration',
         ['class' => 'yii\grid\ActionColumn',
             'template' => '{view}',
             'headerOptions' => ['class' => 'activity-view-link',],
