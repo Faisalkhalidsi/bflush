@@ -19,13 +19,10 @@ $this->title = 'NOSS Activities';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="event-index">
-
     <h1><?= Html::encode($this->title) ?></h1>
     <?php Pjax::begin(); ?>
-    <?php // echo $this->render('_search', ['model' => $searchModel]);  ?>
     <?php
     Modal::begin([
-//        'header' => '<h4>Detail Event</h4>',
         'id' => 'model',
         'size' => 'model-lg',
     ]);
@@ -39,7 +36,6 @@ $this->params['breadcrumbs'][] = $this->title;
     yii2fullcalendar\yii2fullcalendar::widget([
         'events' => $events,
         'clientOptions' => [
-//            'language' => 'fa',
             'eventLimit' => TRUE,
             'theme' => true,
             'fixedWeekCount' => false,
@@ -53,8 +49,5 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]);
     ?>
-
-
-
     <?php Pjax::end(); ?>
 </div>
