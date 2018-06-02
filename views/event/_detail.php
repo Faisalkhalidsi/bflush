@@ -8,6 +8,12 @@
 
 use yii\grid\GridView;
 use yii\bootstrap\Html;
+
+$this->registerJsFile("@web/js/eventDetail.js", [
+    'depends' => [
+        \yii\web\JqueryAsset::className()
+    ]
+]);
 ?>
 <?=
 
@@ -18,9 +24,9 @@ GridView::widget([
         ['class' => 'yii\grid\SerialColumn'],
         'title',
         'category',
+        'description',
         'created_date',
-        'end_date',
-//        'duration',
+//        'end_date',
         ['class' => 'yii\grid\ActionColumn',
             'template' => '{view}',
             'headerOptions' => ['class' => 'activity-view-link',],
@@ -29,6 +35,7 @@ GridView::widget([
                 'view' => function ($url, $model, $key) {
                     return Html::a('<span class="glyphicon glyphicon-search"></span>', '#', [
                                 'class' => 'activity-view-link',
+                                'data-pjax' => "0",
                     ]);
                 },
             ],

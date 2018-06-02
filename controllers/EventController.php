@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\data\ActiveDataProvider;
+use yii\db\Expression;
 
 /**
  * EventController implements the CRUD actions for Event model.
@@ -67,7 +68,37 @@ class EventController extends Controller {
     }
 
     public function actionSummary() {
-        return $this->render('summary');
+        $modelData = Event::find()
+                ->select(['category', 'COUNT(category)'])
+                ->where(['<>', 'category', ''])
+                ->andWhere(['=','DATE(created_date)',new Expression('CURDATE()')])
+//                ->andWhere(['<=', 'waktu', new Expression($end)])
+                ->groupBy(['category'])
+                ->asArray()
+                ->all();
+
+        $labelData = [];
+        $totalVal = [];
+        $jum = 0;
+        foreach ($modelData as $i) {
+            $labelData[] = $i['category'];
+            $totalVal[] = $i['COUNT(category)'];
+            $jum += $i['COUNT(category)'];
+        }
+
+        $tes = "";
+        for ($ii = 0; $ii < sizeof($totalVal); $ii++) {
+            $tes .= ($totalVal[$ii]) . '|';
+        }
+        $dataStr = explode("|", $tes);
+        array_pop($dataStr);
+        
+        $data['label'] = $labelData;
+        $data['pct'] = $dataStr;
+
+        return $this->render('summary', [
+                    'data' => $data,
+        ]);
     }
 
     public function actionView($id) {
@@ -122,6 +153,7 @@ class EventController extends Controller {
         $dataProvider = new ActiveDataProvider([
             'query' => Event::find()
                     ->where("created_date BETWEEN '" . $startDateNow . "' AND '" . $endDateNow . "'")
+                    ->orderBy(['created_date' => SORT_DESC])
                 ,
         ]);
 
