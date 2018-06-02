@@ -8,7 +8,9 @@ $('#showBtn').on('click', function (e) {
     var startDate = $('#startParam').val();
     var endDate = $('#endParam').val();
 
-    alert(endDate);
+    $.get('index.php?r=event/ajaxeventdetail', {'startDate': startDate,'endDate': endDate}, function (data) {
+        $('#detailList').html(data);
+    });
 });
 
 $('.activity-view-link').click(function () {
