@@ -19684,3 +19684,350 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1527759956.15
     'REQUEST_TIME' => 1527759956
 ]
+2018-06-01 16:47:06 [127.0.0.1][-][gnjt91u28e8sb7cagvriu69gcn][error][yii\base\ErrorException:2] yii\base\ErrorException: sizeof(): Parameter must be an array or an object that implements Countable in /var/www/html/bflush/controllers/NossaController.php:255
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'sizeof(): Param...', '/var/www/html/b...', 255, Array)
+#1 /var/www/html/bflush/controllers/NossaController.php(255): sizeof(NULL)
+#2 [internal function]: app\controllers\NossaController->actionAjaxapplsess()
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ajaxapplsess', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('nossa/ajaxappls...', Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#9 {main}
+2018-06-01 16:47:06 [127.0.0.1][-][gnjt91u28e8sb7cagvriu69gcn][info][application] $_GET = [
+    'r' => 'nossa/ajaxapplsess'
+]
+
+$_POST = [
+    'start' => '2018-05-31 00:00'
+    'end' => '2018-06-01 23:47'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'gnjt91u28e8sb7cagvriu69gcn'
+    '_csrf' => 'a7569f4d945ca60d4b9804e20ec57d2199f8959b523449de408e8c6902841e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S6d7LIK3VsOcmuHtOO-z-apccY-KJUX7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=nossa%2Fappl_session'
+    'HTTP_X_CSRF_TOKEN' => 'EEZ9Z-cWwoap_t7VJWrd-qEU7jG6mLb_jNhZ0sWmrfNDcBlQq1-Jtf-NkbZIH5WO7lvDS5f5xpzvgXSZj_P1xA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '47'
+    'HTTP_COOKIE' => 'PHPSESSID=gnjt91u28e8sb7cagvriu69gcn; _csrf=a7569f4d945ca60d4b9804e20ec57d2199f8959b523449de408e8c6902841e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S6d7LIK3VsOcmuHtOO-z-apccY-KJUX7%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '58284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=nossa/ajaxapplsess'
+    'REQUEST_URI' => '/bflush/web/index.php?r=nossa/ajaxapplsess'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527871626.489
+    'REQUEST_TIME' => 1527871626
+]
+2018-06-02 04:36:25 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: date in /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/create', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#6 {main}
+2018-06-02 04:36:25 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][info][application] $_GET = [
+    'r' => 'event/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '30oogon8sdbp8hfindltanv1jj'
+    '_csrf' => '6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=30oogon8sdbp8hfindltanv1jj; _csrf=6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '42884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event/create'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event/create'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527914185.098
+    'REQUEST_TIME' => 1527914185
+]
+2018-06-02 04:38:37 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][error][Error] Error: Class 'DateTimePicker' not found in /var/www/html/bflush/views/event/_form.php:23
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, NULL)
+#3 /var/www/html/bflush/views/event/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/View.php(212): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php(49): yii\web\View->renderAjax('create', Array, Object(app\controllers\EventController))
+#8 /var/www/html/bflush/controllers/EventController.php(81): yii\web\Controller->renderAjax('create', Array)
+#9 [internal function]: app\controllers\EventController->actionCreate('2018-05-31')
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/create', Array)
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#16 {main}
+2018-06-02 04:38:37 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][info][application] $_GET = [
+    'r' => 'event/create'
+    'date' => '2018-05-31'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '30oogon8sdbp8hfindltanv1jj'
+    '_csrf' => '6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Findex'
+    'HTTP_X_CSRF_TOKEN' => '6CEwZYDsMIW3P1SexsGgOY9Ec1uefFTWtnL49cLDG_nYDFJV-r8dxPkGOu__reda1XBHL_BNA7jQKp-AjZMvgA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=30oogon8sdbp8hfindltanv1jj; _csrf=6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43020'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event/create&date=2018-05-31'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event/create&date=2018-05-31'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527914317.835
+    'REQUEST_TIME' => 1527914317
+]
+2018-06-02 04:38:38 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][error][Error] Error: Class 'DateTimePicker' not found in /var/www/html/bflush/views/event/_form.php:23
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, NULL)
+#3 /var/www/html/bflush/views/event/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/View.php(212): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php(49): yii\web\View->renderAjax('create', Array, Object(app\controllers\EventController))
+#8 /var/www/html/bflush/controllers/EventController.php(81): yii\web\Controller->renderAjax('create', Array)
+#9 [internal function]: app\controllers\EventController->actionCreate('2018-05-31')
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/create', Array)
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#16 {main}
+2018-06-02 04:38:38 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][info][application] $_GET = [
+    'r' => 'event/create'
+    'date' => '2018-05-31'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '30oogon8sdbp8hfindltanv1jj'
+    '_csrf' => '6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Findex'
+    'HTTP_X_CSRF_TOKEN' => '6CEwZYDsMIW3P1SexsGgOY9Ec1uefFTWtnL49cLDG_nYDFJV-r8dxPkGOu__reda1XBHL_BNA7jQKp-AjZMvgA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=30oogon8sdbp8hfindltanv1jj; _csrf=6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event/create&date=2018-05-31'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event/create&date=2018-05-31'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527914318.752
+    'REQUEST_TIME' => 1527914318
+]
+2018-06-02 04:38:52 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][error][Error] Error: Class 'DateTimePicker' not found in /var/www/html/bflush/views/event/_form.php:23
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, NULL)
+#3 /var/www/html/bflush/views/event/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/web/View.php(212): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php(49): yii\web\View->renderAjax('create', Array, Object(app\controllers\EventController))
+#8 /var/www/html/bflush/controllers/EventController.php(81): yii\web\Controller->renderAjax('create', Array)
+#9 [internal function]: app\controllers\EventController->actionCreate()
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/create', Array)
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#16 {main}
+2018-06-02 04:38:52 [127.0.0.1][-][30oogon8sdbp8hfindltanv1jj][info][application] $_GET = [
+    'r' => 'event/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '30oogon8sdbp8hfindltanv1jj'
+    '_csrf' => '6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=30oogon8sdbp8hfindltanv1jj; _csrf=6ed755acd8e6d86526950ce691c49f892dd8e8983e64ab4d664d775ec574b66fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220-b0zS-AN9nq9lGcZ44tn1WnfXguOP4y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '43032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event/create'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event/create'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1527914332.971
+    'REQUEST_TIME' => 1527914332
+]

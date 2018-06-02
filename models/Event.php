@@ -12,6 +12,7 @@ use Yii;
  * @property string $description
  * @property string $created_date
  * @property string $end_date
+ * @property string $category
  */
 class Event extends \yii\db\ActiveRecord
 {
@@ -31,7 +32,7 @@ class Event extends \yii\db\ActiveRecord
         return [
             [['description'], 'string'],
             [['created_date', 'end_date'], 'safe'],
-            [['title'], 'string', 'max' => 100],
+            [['title', 'category'], 'string', 'max' => 100],
         ];
     }
 
@@ -46,6 +47,7 @@ class Event extends \yii\db\ActiveRecord
             'description' => 'Description',
             'created_date' => 'Created Date',
             'end_date' => 'End Date',
+            'category' => 'Category',
         ];
     }
 }

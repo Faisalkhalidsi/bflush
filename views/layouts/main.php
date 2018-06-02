@@ -45,6 +45,7 @@ AppAsset::register($this);
                     ['label' => 'NOSSA', 'items' => [
                             ['label' => 'DB Status', 'url' => ['nossa/dbstatus']],
                             ['label' => 'Integration Status', 'url' => ['/nossa/index']],
+                            ['label' => 'Appl Session', 'url' => ['/nossa/appl_session']],
                         ],
                     ],
 //                    ['label' => 'OSM', 'url' => ['/nossf-osm/index']],

@@ -69,9 +69,9 @@ class EventController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate($date) {
+    public function actionCreate() {
         $model = new Event();
-        $model->created_date = $date;
+//        $model->created_date = $date;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
