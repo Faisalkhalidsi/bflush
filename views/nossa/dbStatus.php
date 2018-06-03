@@ -14,6 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="nossa-status-integrasi-index">
     <hr>
+    <center><h4><?= Html::a("DB Uptime", ['nossa/appl_session'], ['target' => '_blank']) ?></h4></center>
     <div class="row">
         <?=
         GridView::widget([
@@ -37,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ChartJs::widget([
                 'id' => 'nossaSessionApplCrx',
                 'type' => 'line',
-                    'options' => [
+                'options' => [
                     'height' => 3,
                     'width' => 15,
                 ],
@@ -60,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
                 'data' => [
                     'labels' => $dataPackets,
-                    'datasets' =>$packets
+                    'datasets' => $packets
                 ]
             ]);
             ?>
@@ -68,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <hr>
     <div class = "row">
-        <div class = "col-sm-5">
+        <div class = "col-sm-6">
             <div id="chart" class="center-block">
                 <center><h4><?= Html::a("Work Order Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
                 <?=
@@ -115,7 +116,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ?>
             </div>
         </div>
-        <div class = "col-sm-5">
+        <div class = "col-sm-6">
             <div id="chart" class="center-block">
                 <center><h4><?= Html::a("Session DB Total", ['nossa/index'], ['target' => '_blank']) ?></h4></center>
                 <?=

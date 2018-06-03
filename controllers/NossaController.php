@@ -55,7 +55,6 @@ class NossaController extends Controller {
         } else {
             $dataProvider = new ActiveDataProvider([
                 'query' => NossaStatusIntegrasi::find()
-//                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
                         ->where(['=', 'waktu', NossaStatusIntegrasi::find()->select('waktu')->orderBy(['waktu' => SORT_DESC])->limit(1)])
                     ,
             ]);
@@ -65,12 +64,6 @@ class NossaController extends Controller {
         ]);
     }
 
-    /**
-     * Displays a single NossaStatusIntegrasi model.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
     public function actionView($id) {
         return $this->render('view', [
                     'model' => $this->findModel($id),
@@ -120,11 +113,6 @@ class NossaController extends Controller {
         $dataProvider = new ArrayDataProvider([
             'allModels' => \app\models\NossaDbStatus::find()
                     ->where(['in', 'id', \app\models\NossaDbStatus::find()->select('MAX(id)')->groupBy(['hostname'])])
-//                    ->where(['in', 'waktu', NossaStatusIntegrasi::find()->select('waktu')])
-//                    ->where(['in', 'waktu', new Expression($timeParam2)])
-//                    ->orderBy(['id' => SORT_DESC])
-//                    ->groupBy(['hostname', 'uptime'])
-//                    ->limit(2)
                     ->all(),
         ]);
 
@@ -271,15 +259,13 @@ class NossaController extends Controller {
             }
             $packets['backgroundColor'] = "rgba(0,0,255,0)";
             $packets['borderColor'] = "rgba(0,0,255,0.5)";
-            $packets['pointBackgroundColor'] = "rgba(50,99,132,1)";
+            $packets['pointBackgroundColor'] = "rgba(255,99,132,1)";
             $packets['pointBorderColor'] = "#fff";
             $packets['pointHoverBackgroundColor'] = "#fff";
             $packets['pointHoverBorderColor'] = "rgba(255,99,132,1)";
             $packets['data'] = $dataData;
             array_push($allPackets, $packets);
         }
-
-
 
         $dataKirim['allPackets'] = $allPackets;
         $dataKirim['labelData'] = $labelData;

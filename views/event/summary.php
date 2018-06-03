@@ -1,16 +1,11 @@
 <?php
-
 use dosamigos\chartjs\ChartJs;
-use yii\grid\GridView;
-use yii\bootstrap\Html;
 
 $this->title = 'NOSS Activities Summaries';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <h3>NOSS Activities Summary</h3>
 
-<!--<p>*Today</p>-->
-<?= date("d-m-Y"); ?>
 <hr>
 <div class="container">
     <div class="row">
@@ -72,75 +67,24 @@ $this->params['breadcrumbs'][] = $this->title;
     <hr>
     <div class="row">
         <div class="col-lg-4 ">
-            <h4>NOSSF-OSM Activities</h4>
-            <hr>
             <?=
-            GridView::widget([
-                'id' => 'detailList',
-                'dataProvider' => $dataProviderOSM,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-                    [
-                        'label' => 'Title',
-                        'format' => 'raw',
-                        'value' => function ($dataProviderOSM) {
-                            return Html::a($dataProviderOSM->title, ['/event/view2', 'id' => $dataProviderOSM->id], ['target' => '_blank', 'data-pjax' => "0"]);
-                        },
-                    ],
-                    [
-                        'label' => 'Start Date',
-                        'value' => 'created_date',
-                    ],
-                ],
-            ]);
+            $this->render('_sumOsm', [
+                'dataProviderOSM' => $dataProviderOSM,
+            ])
             ?>
         </div>
         <div class="col-lg-4">
-            <h4>NOSSF-UIM Activities</h4>
-            <hr>
             <?=
-            GridView::widget([
-                'id' => 'detailList',
-                'dataProvider' => $dataProviderUIM,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-                    [
-                        'label' => 'Title',
-                        'format' => 'raw',
-                        'value' => function ($dataProviderUIM) {
-                            return Html::a($dataProviderUIM->title, ['/event/view2', 'id' => $dataProviderUIM->id], ['target' => '_blank', 'data-pjax' => "0"]);
-                        },
-                    ],
-                    [
-                        'label' => 'Start Date',
-                        'value' => 'created_date',
-                    ],
-                ],
-            ]);
+            $this->render('_sumUIM', [
+                'dataProviderUIM' => $dataProviderUIM,
+            ])
             ?>
         </div>
         <div class="col-lg-4">
-            <h4>NOSSA Activities</h4>
-            <hr>
             <?=
-            GridView::widget([
-                'id' => 'detailList',
-                'dataProvider' => $dataProviderNOSSA,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-                    [
-                        'label' => 'Title',
-                        'format' => 'raw',
-                        'value' => function ($dataProviderNOSSA) {
-                            return Html::a($dataProviderNOSSA->title, ['/event/view2', 'id' => $dataProviderNOSSA->id], ['target' => '_blank', 'data-pjax' => "0"]);
-                        },
-                    ],
-                    [
-                        'label' => 'Start Date',
-                        'value' => 'created_date',
-                    ],
-                ],
-            ]);
+            $this->render('_sumNOSSA', [
+                'dataProviderNOSSA' => $dataProviderNOSSA,
+            ])
             ?>
         </div>
     </div>
