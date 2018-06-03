@@ -29377,3 +29377,1595 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1527934735.069
     'REQUEST_TIME' => 1527934735
 ]
+2018-06-03 16:17:52 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:17:52 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event/view?id=16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event/view?id=16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042672.755
+    'REQUEST_TIME' => 1528042672
+]
+2018-06-03 16:18:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:18:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'EMNuFLaUj413Hlji1K7S1AltqwUx3q-eHmMDIjuDPoYmtlZkjvvd6QJ4Aoas3aOnfCTmPF-u-8orIU10T-VG0g=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042720.74
+    'REQUEST_TIME' => 1528042720
+]
+2018-06-03 16:18:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:18:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042720.775
+    'REQUEST_TIME' => 1528042720
+]
+2018-06-03 16:19:07 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:07 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'ult_IXHPMZbkLADYenL6nte64flVZHamtPBFDyIud02MLkdRSaBj8pFKWrwCAYvtovOswDsUIvKBsgtZVkgPGQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042747.496
+    'REQUEST_TIME' => 1528042747
+]
+2018-06-03 16:19:07 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:07 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042747.532
+    'REQUEST_TIME' => 1528042747
+]
+2018-06-03 16:19:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=15 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=15', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=15'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'r_ekVMIeP_XEWFletXBAGX79mb6VUeWLgu5Pe5i7KxyZgpwk-nFtkbE-AzrNAzFqC7TUh_shsd-3rAEt7N1TSA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D15&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D15&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042750.276
+    'REQUEST_TIME' => 1528042750
+]
+2018-06-03 16:19:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=15 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=15', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=15'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D15'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D15'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042750.335
+    'REQUEST_TIME' => 1528042750
+]
+2018-06-03 16:19:12 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=14 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=14', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:12 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=14'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'LzZRBrpHJsnQSp5X2rFU4I-OnnuA1LVf_8GFM04Frv4ZQ2l2gih0raUsxDOiwiWT-sfTQu6k4QvKg8tlOmPWqg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D14&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D14&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042752.898
+    'REQUEST_TIME' => 1528042752
+]
+2018-06-03 16:19:12 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=14 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=14', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:12 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=14'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D14'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D14'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042752.931
+    'REQUEST_TIME' => 1528042752
+]
+2018-06-03 16:19:16 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=13 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=13', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:16 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=13'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'w7sxcF9y-MdFhamR1r3RlHb0wKKatHSJu7rJgu43lyL1zgkAZx2qozDj8_WuzqDnA72Nm_TEIN2O-IfUmlHvdg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D13&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D13&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042756.777
+    'REQUEST_TIME' => 1528042756
+]
+2018-06-03 16:19:16 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=13 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=13', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:16 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=13'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D13'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D13'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042756.819
+    'REQUEST_TIME' => 1528042756
+]
+2018-06-03 16:19:25 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:25 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'HMOp_R-oBLhxUyHMX3kQkgJfaxE9istXocL7LfezeisqtpGNJ8dW3AQ1e6gnCmHhdxYmKFP6nwOUgLV7g9UCfw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042765.407
+    'REQUEST_TIME' => 1528042765
+]
+2018-06-03 16:19:25 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:25 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042765.443
+    'REQUEST_TIME' => 1528042765
+]
+2018-06-03 16:19:27 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=14 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=14', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:27 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=14'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'DFYYBU0ZrmiEQpcsc24enUwztHHz7SeGyYZGXHrpFUA6IyB1dXb8DPEkzUgLHW_uOXr5SJ2dc9L8xAgKDo9tFA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D14&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D14&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042767.987
+    'REQUEST_TIME' => 1528042767
+]
+2018-06-03 16:19:28 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=14 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=14', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:19:28 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=14'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D14'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D14'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042768.022
+    'REQUEST_TIME' => 1528042768
+]
+2018-06-03 16:19:37 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#6 {main}
+2018-06-03 16:19:37 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042777.912
+    'REQUEST_TIME' => 1528042777
+]
+2018-06-03 16:20:03 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:20:03 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => 'PYqNtw9auCLo7FG2_4IYM2hkVPzbbUQEmznogSl-ca0L_7XHNzXqRp2KC9KH8WlAHS0ZxbUdEFCue6bXXRgJ-Q=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042803.973
+    'REQUEST_TIME' => 1528042803
+]
+2018-06-03 16:20:04 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view?id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view?id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:20:04 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view?id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%3Fid%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%3Fid%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042804.009
+    'REQUEST_TIME' => 1528042804
+]
+2018-06-03 16:20:31 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view&id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view&id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view&id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:20:31 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view&id=16'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_X_CSRF_TOKEN' => '0Yroi4eiB925pObKIH6RhEZBXOYqGZHKCbDuM_Whncvn_9D7v81VuczCvK5YDeD3MwgR30RpxZ488qBlgcflnw=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52836'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%26id%3D16&_pjax=%23p0'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%26id%3D16&_pjax=%23p0'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042831.312
+    'REQUEST_TIME' => 1528042831
+]
+2018-06-03 16:20:31 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view&id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view&id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view&id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:20:31 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view&id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52836'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%26id%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%26id%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042831.379
+    'REQUEST_TIME' => 1528042831
+]
+2018-06-03 16:21:22 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/bflush/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view', Array)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#6 {main}
+2018-06-03 16:21:22 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52850'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042882.914
+    'REQUEST_TIME' => 1528042882
+]
+2018-06-03 16:21:26 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view&id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view&id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view&id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:21:26 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view&id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52852'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%26id%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%26id%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042886.051
+    'REQUEST_TIME' => 1528042886
+]
+2018-06-03 16:21:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view&id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view&id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view&id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:21:40 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view&id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52876'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%26id%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%26id%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042900.134
+    'REQUEST_TIME' => 1528042900
+]
+2018-06-03 16:22:55 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: event/view&id=16 in /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view&id=16', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/view&id=1...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#2 {main}
+2018-06-03 16:22:55 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/view&id=16'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '52932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fview%26id%3D16'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fview%26id%3D16'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528042975.718
+    'REQUEST_TIME' => 1528042975
+]
