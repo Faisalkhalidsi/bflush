@@ -27,7 +27,7 @@ GridView::widget([
             'format' => 'raw',
             'value' => function ($dataProvider) {
 //                return Html::a($dataProvider->title, ['/event/view', 'id' => $dataProvider->id], ['target' => '_blank']);
-                return Html::a($dataProvider->title, ['/event/view', 'id' => $dataProvider->id], ['target' => '_blank', 'data-pjax' => "0"]);
+                return Html::a($dataProvider->title, ['/event/view2', 'id' => $dataProvider->id], ['target' => '_blank', 'data-pjax' => "0"]);
             },
         ],
 //        'title',

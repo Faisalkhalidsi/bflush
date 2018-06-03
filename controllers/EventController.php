@@ -102,6 +102,12 @@ class EventController extends Controller {
     }
 
     public function actionView($id) {
+        return $this->renderAjax('view', [
+                    'model' => $this->findModel($id),
+        ]);
+    }
+    
+     public function actionView2($id) {
         return $this->render('view', [
                     'model' => $this->findModel($id),
         ]);
