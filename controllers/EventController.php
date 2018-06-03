@@ -71,7 +71,7 @@ class EventController extends Controller {
         $modelData = Event::find()
                 ->select(['category', 'COUNT(category)'])
                 ->where(['<>', 'category', ''])
-                ->andWhere(['=','DATE(created_date)',new Expression('CURDATE()')])
+                ->andWhere(['=', 'DATE(created_date)', new Expression('CURDATE()')])
 //                ->andWhere(['<=', 'waktu', new Expression($end)])
                 ->groupBy(['category'])
                 ->asArray()
@@ -92,12 +92,40 @@ class EventController extends Controller {
         }
         $dataStr = explode("|", $tes);
         array_pop($dataStr);
-        
+
         $data['label'] = $labelData;
         $data['pct'] = $dataStr;
 
+
+        $dataProviderOSM = new ActiveDataProvider([
+            'query' => Event::find()
+                    ->where(['=', 'DATE(created_date)', new Expression('CURDATE()')])
+                    ->andWhere(['category' => 'NOSSF-OSM'])
+                    ->orderBy(['created_date' => SORT_DESC])
+                ,
+        ]);
+
+        $dataProviderUIM = new ActiveDataProvider([
+            'query' => Event::find()
+                    ->where(['=', 'DATE(created_date)', new Expression('CURDATE()')])
+                    ->andWhere(['category' => 'NOSSF-UIM'])
+                    ->orderBy(['created_date' => SORT_DESC])
+                ,
+        ]);
+
+        $dataProviderNOSSA = new ActiveDataProvider([
+            'query' => Event::find()
+                    ->where(['=', 'DATE(created_date)', new Expression('CURDATE()')])
+                    ->andWhere(['category' => 'NOSSF-NOSSA'])
+                    ->orderBy(['created_date' => SORT_DESC])
+                ,
+        ]);
+
         return $this->render('summary', [
                     'data' => $data,
+                    'dataProviderOSM' => $dataProviderOSM,
+                    'dataProviderUIM' => $dataProviderUIM,
+                    'dataProviderNOSSA' => $dataProviderNOSSA
         ]);
     }
 
@@ -106,8 +134,8 @@ class EventController extends Controller {
                     'model' => $this->findModel($id),
         ]);
     }
-    
-     public function actionView2($id) {
+
+    public function actionView2($id) {
         return $this->render('view', [
                     'model' => $this->findModel($id),
         ]);

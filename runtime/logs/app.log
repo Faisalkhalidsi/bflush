@@ -30969,3 +30969,442 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1528042975.718
     'REQUEST_TIME' => 1528042975
 ]
+2018-06-03 16:42:34 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][Error] Error: Class 'GridView' not found in /var/www/html/bflush/views/event/summary.php:73
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#4 /var/www/html/bflush/controllers/EventController.php(100): yii\base\Controller->render('summary', Array)
+#5 [internal function]: app\controllers\EventController->actionSummary()
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#12 {main}
+2018-06-03 16:42:34 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044154.384
+    'REQUEST_TIME' => 1528044154
+]
+2018-06-03 16:42:44 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/views/event/summary.php:76
+Stack trace:
+#0 /var/www/html/bflush/views/event/summary.php(76): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 76, Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#5 /var/www/html/bflush/controllers/EventController.php(100): yii\base\Controller->render('summary', Array)
+#6 [internal function]: app\controllers\EventController->actionSummary()
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#13 {main}
+2018-06-03 16:42:44 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54314'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044164.638
+    'REQUEST_TIME' => 1528044164
+]
+2018-06-03 16:45:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/views/event/summary.php:76
+Stack trace:
+#0 /var/www/html/bflush/views/event/summary.php(76): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 76, Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#5 /var/www/html/bflush/controllers/EventController.php(116): yii\base\Controller->render('summary', Array)
+#6 [internal function]: app\controllers\EventController->actionSummary()
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#13 {main}
+2018-06-03 16:45:10 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044310.268
+    'REQUEST_TIME' => 1528044310
+]
+2018-06-03 16:45:23 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][Error] Error: Class 'Html' not found in /var/www/html/bflush/views/event/summary.php:83
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(app\models\Event), 16, 0, Object(yii\grid\DataColumn))
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(app\models\Event), 16, 0, Object(yii\grid\DataColumn))
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Event), 16, 0)
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Event), 16, 0)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\Event), 16, 0)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\Event), 16, 0)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(353): yii\grid\GridView->renderTableBody()
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#14 /var/www/html/bflush/views/event/summary.php(87): yii\base\Widget::widget(Array)
+#15 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#19 /var/www/html/bflush/controllers/EventController.php(116): yii\base\Controller->render('summary', Array)
+#20 [internal function]: app\controllers\EventController->actionSummary()
+#21 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#24 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#25 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#27 {main}
+2018-06-03 16:45:23 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54370'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044323.607
+    'REQUEST_TIME' => 1528044323
+]
+2018-06-03 16:45:33 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/bflush/views/event/summary.php:84
+Stack trace:
+#0 /var/www/html/bflush/views/event/summary.php(84): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/b...', 84, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\Event), 16, 0, Object(yii\grid\DataColumn))
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(app\models\Event), 16, 0, Object(yii\grid\DataColumn))
+#3 /var/www/html/bflush/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Event), 16, 0)
+#4 /var/www/html/bflush/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Event), 16, 0)
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\Event), 16, 0)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\Event), 16, 0)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /var/www/html/bflush/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /var/www/html/bflush/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#14 /var/www/html/bflush/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /var/www/html/bflush/views/event/summary.php(88): yii\base\Widget::widget(Array)
+#16 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/b...')
+#17 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#18 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#19 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#20 /var/www/html/bflush/controllers/EventController.php(116): yii\base\Controller->render('summary', Array)
+#21 [internal function]: app\controllers\EventController->actionSummary()
+#22 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#25 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#26 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#28 {main}
+2018-06-03 16:45:33 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044333.94
+    'REQUEST_TIME' => 1528044333
+]
+2018-06-03 16:52:36 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][error][ParseError] ParseError: syntax error, unexpected '<', expecting end of file in /var/www/html/bflush/views/event/summary.php:112
+Stack trace:
+#0 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#1 /var/www/html/bflush/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\EventController))
+#2 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('summary', Array, Object(app\controllers\EventController))
+#3 /var/www/html/bflush/controllers/EventController.php(128): yii\base\Controller->render('summary', Array)
+#4 [internal function]: app\controllers\EventController->actionSummary()
+#5 /var/www/html/bflush/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/bflush/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/bflush/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('summary', Array)
+#8 /var/www/html/bflush/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('event/summary', Array)
+#9 /var/www/html/bflush/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/bflush/web/index.php(13): yii\base\Application->run()
+#11 {main}
+2018-06-03 16:52:36 [127.0.0.1][-][hq0b26hiactph212hsvlqckeb6][info][application] $_GET = [
+    'r' => 'event/summary'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'hq0b26hiactph212hsvlqckeb6'
+    '_csrf' => 'fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6u8p8oRdufZdxsqsuIM9npTT5BNVtfxT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/bflush/web/index.php?r=event%2Fdetail'
+    'HTTP_COOKIE' => 'PHPSESSID=hq0b26hiactph212hsvlqckeb6; _csrf=fd0a1a345676ad6e8305349e839f9e1c4e0d7d2cb1cae65e30a94fe64eee50a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226u8p8oRdufZdxsqsuIM9npTT5BNVtfxT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/bflush/web/index.php'
+    'REMOTE_PORT' => '54742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event%2Fsummary'
+    'REQUEST_URI' => '/bflush/web/index.php?r=event%2Fsummary'
+    'SCRIPT_NAME' => '/bflush/web/index.php'
+    'PHP_SELF' => '/bflush/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528044756.716
+    'REQUEST_TIME' => 1528044756
+]
