@@ -8,8 +8,10 @@ $this->title = 'NOSS Activities Summaries';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <h3>NOSS Activities Summary</h3>
+
+<!--<p>*Today</p>-->
+<?= date("d-m-Y"); ?>
 <hr>
-<p>*Today</p>
 <div class="container">
     <div class="row">
         <div id="chart" class="center-block">
@@ -85,7 +87,10 @@ $this->params['breadcrumbs'][] = $this->title;
                             return Html::a($dataProviderOSM->title, ['/event/view2', 'id' => $dataProviderOSM->id], ['target' => '_blank', 'data-pjax' => "0"]);
                         },
                     ],
-                    'created_date',
+                    [
+                        'label' => 'Start Date',
+                        'value' => 'created_date',
+                    ],
                 ],
             ]);
             ?>
@@ -106,7 +111,10 @@ $this->params['breadcrumbs'][] = $this->title;
                             return Html::a($dataProviderUIM->title, ['/event/view2', 'id' => $dataProviderUIM->id], ['target' => '_blank', 'data-pjax' => "0"]);
                         },
                     ],
-                    'created_date',
+                    [
+                        'label' => 'Start Date',
+                        'value' => 'created_date',
+                    ],
                 ],
             ]);
             ?>
@@ -127,7 +135,10 @@ $this->params['breadcrumbs'][] = $this->title;
                             return Html::a($dataProviderNOSSA->title, ['/event/view2', 'id' => $dataProviderNOSSA->id], ['target' => '_blank', 'data-pjax' => "0"]);
                         },
                     ],
-                    'created_date',
+                    [
+                        'label' => 'Start Date',
+                        'value' => 'created_date',
+                    ],
                 ],
             ]);
             ?>
